@@ -1,0 +1,63 @@
+/* pages/lljl/index.wxss */
+.top-type{
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+.top-type view{
+  width: 50%;
+  height: 100%;
+  font-size: 26rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-typel{
+  background-color: #99C3FD;
+}
+.top-type2{
+  background-color: #B7C0C9;
+}
+.kb{
+  width: 100%;
+  height: 50rpx;
+}
+.content{
+  width: 100%;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  flex-direction: row;
+  padding: 45rpx 0;
+}
+.content-l{
+  width: 225rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.content-l image{
+  width: 158rpx;
+  height: 179rpx;
+  margin-left: 39rpx;
+  border-radius: 10rpx;
+}
+.content-r{
+  width: 500rpx;
+  
+}
+.content-r-t{
+  font-size: 24rpx;
+  color: #898888;
+  padding-top: 15rpx;
+  padding-bottom: 22rpx;
+}
+.content-r-b{
+  width: 100%;
+  padding-bottom: 10rpx;
+   font-size: 20rpx;
+  color: #898888;
+}

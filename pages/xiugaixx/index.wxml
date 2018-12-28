@@ -1,0 +1,175 @@
+<!-- 
+<view class='top' style="background-image: url('{{imgurl}}/xcximage/back2.png')">
+  <image src='{{href}}{{userxx.headImage}}' catchtap='choosetx'></image>
+
+</view>
+<view class='kb'></view>
+<view class='user-out'>
+  <view class='username'>
+    <view class='username-l'>
+      <image src='{{imgurl}}/xcximage/44.png'></image>
+    </view>
+    <view class='username-r'>
+      <view class='username-r-l'>
+        昵称
+      </view>
+      <view class='username-r-r'>
+        <input placeholder='请输入昵称' type='text' maxlength='30' value='{{userxx.nickName}}' bindinput='hqnc'></input>
+      </view>
+    </view>
+  </view>
+  <view class='username'>
+    <view class='username-l'>
+      <image src='{{imgurl}}/xcximage/55.png'></image>
+    </view>
+    <view class='username-r'>
+      <view class='username-r-l'>
+        联系电话
+      </view>
+      <view class='username-r-r'>
+        <input value='{{userxx.phone}}' disabled='true'></input>
+      </view>
+    </view>
+  </view>
+  <view class='username2'>
+    <view class='username-l'>
+      <image src='{{imgurl}}/xcximage/66.png'></image>
+    </view>
+    <view class='username-r'>
+      <view class='username-r-l'>
+        性别
+      </view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='username-r-r'>
+        <input placeholder='填写正在使用的联系方式' value='{{array[index]}}'></input>
+      </picker>
+    </view>
+  </view>
+</view>
+<view class='kb'></view>
+<view class='user-out'>
+  <view class='username'>
+    <view class='username-l'>
+      <image src='{{imgurl}}/xcximage/77.png'></image>
+    </view>
+    <view class='username-r'>
+      <view class='username-r-l'>
+        公司地址
+      </view>
+      <view class='username-r-r'>
+        <input placeholder='请填写公司所在地址' value='{{userxx.address}}' bindinput='hqgsdz'></input>
+      </view>
+    </view>
+  </view>
+  <view class='username'>
+    <view class='username-l'>
+      <image src='{{imgurl}}/xcximage/88.png'></image>
+    </view>
+    <view class='username-r'>
+      <view class='username-r-l'>
+        公司名称
+      </view>
+      <view class='username-r-r'>
+        <input placeholder='请填写公司名称' value='{{userxx.company}}' bindinput='hqgsmz'></input>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='submit-out'>
+  <view class='submit' catchtap='gowc'>完成</view>
+</view>
+<canvas canvas-id="photo_canvas" style="width:{{canvasWidth}}px;height:{{canvasHeight}}px;position: absolute;left:-300px;top:-300px;"></canvas> -->
+
+<view class='newxx'>
+  <view class='newxx-t'>
+    <view class='newxx-t-l'>
+      头像
+      <image src='{{href}}{{userxx.headImage}}' catchtap='choosetx'></image>
+    </view>
+    <view class='newxx-t-r'>
+      <image src='/image/qianjin.png'></image>
+    </view>
+  </view>
+  <view class='newxx-b'>
+    <view class='newxx-b-l'>
+      <view class='newxx-b-l-l'>昵称</view>
+      <view class='newxx-b-l-r'>
+        <input placeholder='请输入昵称' type='text' maxlength='30' value='{{userxx.nickName}}' bindinput='hqnc' />
+      </view>
+
+
+    </view>
+    <view class='newxx-b-r'>
+      <image src='/image/qianjin.png'></image>
+    </view>
+  </view>
+  <view class='newxx-b'>
+    <view class='newxx-b-l'>
+      <view class='newxx-b-l-l'>手机号</view>
+      <view class='newxx-b-l-r'>
+        <input value='{{userxx.phone}}' disabled='true' />
+      </view>
+
+
+    </view>
+    <view class='newxx-b-r'>
+      <image src='/image/qianjin.png'></image>
+    </view>
+  </view>
+  <view class='newxx-b'>
+    <view class='newxx-b-l'>
+      <view class='newxx-b-l-l'>姓别</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='newxx-b-l-r'>
+        <input placeholder='填写正在使用的联系方式' value='{{array[index]}}'></input>
+      </picker>
+
+
+    </view>
+    <view class='newxx-b-r'>
+      <image src='/image/qianjin.png'></image>
+    </view>
+  </view>
+  <view class='newxx-b'>
+    <view class='newxx-b-l'>
+      <view class='newxx-b-l-l'>公司</view>
+      <view class='newxx-b-l-r'>
+        <input placeholder='请填写公司' value='{{userxx.company}}' bindinput='hqgsmz' />
+      </view>
+
+
+    </view>
+    <view class='newxx-b-r'>
+      <image src='/image/qianjin.png'></image>
+    </view>
+  </view>
+  <view class='newxx-b'>
+    <view class='newxx-b-l'>
+      <view class='newxx-b-l-l'>简介</view>
+      <view class='newxx-b-l-r'>
+        <input placeholder='请填写简介' value='{{userxx.company}}' bindinput='hqgsjj' />
+      </view>
+
+
+    </view>
+    <view class='newxx-b-r'>
+      <image src='/image/qianjin.png'></image>
+    </view>
+  </view>
+
+</view>
+<view class='newxx-b2'>
+  <view class='newxx-b-l'>
+    <view class='newxx-b-l-l'>地址</view>
+    <view class='newxx-b-l-r'>
+      <input placeholder='请输入地址' value='{{userxx.address}}' bindinput='hqgsdz'/>
+    </view>
+
+
+  </view>
+  <view class='newxx-b-r'>
+
+  </view>
+</view>
+<view class='submit-out'>
+  <view class='submit' catchtap='gowc'>完成</view>
+</view>
+<canvas canvas-id="photo_canvas" style="width:{{canvasWidth}}px;height:{{canvasHeight}}px;position: absolute;left:-300px;top:-300px;"></canvas>

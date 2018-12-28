@@ -1,0 +1,9 @@
+<view class='hot-con' wx:for="{{quyu}}" wx:for-index="index" wx:key="*" catchtap='golookxq' id='{{item.id}}' data-image='{{item.imgurl}}' data-content="{{item.content}}" data-index="{{index}}" >
+  <view class='hot-con-l'>
+    <image src='{{item.imgurl}}'></image>
+  </view>
+  <view class='hot-con-r'>
+    <view class='hot-con-r-t'>{{item.title}}</view>
+     <view class='hot-con-r-b'>{{item.laiyuan}}</view>
+  </view>
+</view>

@@ -1,0 +1,154 @@
+/* pages/qyxzxg/index.wxss */
+@import "../../teml/cascade.wxss";
+.qyxzxg{
+  width: 100%;
+  padding: 15rpx 64rpx;
+  box-sizing: border-box;
+}
+.xg-con{
+  width: 100%;
+  border: 1rpx solid #ddd;
+}
+.xg-con-sr{
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  flex-direction: row;
+  font-size: 24rpx;
+  color: #7E7E7E;
+}
+.xg-con-sr-l{
+  width: 195rpx;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 46rpx;
+  box-sizing: border-box;
+}
+.xg-con-sr-l2{
+  width: 195rpx;
+  height:100%;
+  display: flex;
+ 
+  align-items: center;
+  padding-left: 46rpx;
+  box-sizing: border-box;
+}
+.xg-con-sr-r2{
+  width: 420rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.xg-con-sr-r2 input{
+  width: 96%;
+  height: 80%;
+  
+}
+.xg-con-sr-l view{
+  width: 100%;
+  height:40rpx;
+  border-right: 1rpx solid #ddd;
+}
+.xg-con-sr-r{
+  width: 425rpx;
+  height: 100%;
+  display: flex;
+  justify-content: space-between
+}
+/* .xg-con-sr-r-l{
+  width: 425rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+} */
+.xg-con-sr-r-l{
+  width: 370rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  overflow:hidden; 
+text-overflow:ellipsis;
+white-space:nowrap;
+padding-left: 20rpx;
+box-sizing: border-box;
+}
+.xg-con-sr-r-r{
+  width: 50rpx;
+   height: 80rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.xg-con-sr-r-r image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.xqms{
+  width: 100%;
+  font-size: 26rpx;
+  color: #7E7E7E;
+  padding-top: 20rpx;
+  padding-bottom: 10rpx;
+}
+textarea{
+  width: 100%;
+  background-color: #eee;
+  padding: 15rpx;
+  font-size: 24rpx;
+  color: #989898;
+  height: 150rpx;
+}
+.sctp{
+  width: 100%;
+  height: 215rpx;
+}
+.submit{
+  width: 100%;
+  height: 75rpx;
+  background-size: 100% 100%;
+  font-size: 47rpx;
+  color: #fff;
+  margin-top: 20rpx;
+  margin-bottom: 15rpx;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.shangcpic{
+  width: 100%;
+ 
+  justify-content: space-between;
+   display: flex;
+  flex-flow: row wrap;
+}
+.shangcpic::after{
+  width: 200rpx;
+ content: ""; 
+}
+.shangcdtp{
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 10rpx;
+  position: relative;
+}
+
+.shangcdtp image{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.dwdel{
+  width: 40rpx;
+  height: 40rpx;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+.dwdel image{
+  width: 40rpx;
+  height: 40rpx;
+}

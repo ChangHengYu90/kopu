@@ -1,0 +1,52 @@
+.jlcon{
+  width: 100%;
+  height: 105rpx;
+  padding: 10rpx 25rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #eee;
+}
+.jlcon-l{
+  width: 500rpx;
+  height: 105rpx;
+  
+}
+.jlcon-r{
+  width: 200rpx;
+  height: 105rpx;
+}
+.jlcon-l-t{
+  width: 100%;
+  padding-bottom: 10rpx;
+  font-size: 30rpx;
+  color: #444;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.jlcon-l-b{
+  width: 100%;
+  font-size: 24rpx;
+  color: #999;
+
+}
+.jlcon-r-t{
+  width: 100%;
+  text-align: right;
+  font-size: 24rpx;
+  color: #999;
+  
+  padding-top: 8rpx;
+
+}
+.zwshuju{
+  width: 100%;
+  height: 750rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #999;
+  
+}

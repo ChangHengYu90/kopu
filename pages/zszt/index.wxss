@@ -1,0 +1,101 @@
+/* pages/zszt/index.wxss */
+.content{
+  width: 100%;
+  height: 170rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #ddd;
+}
+.content-l{
+  width: 200rpx;
+  height: 170rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-l image{
+  width: 160rpx;
+  height: 130rpx;
+
+}
+.content-r{
+  width: 550rpx;
+  height: 170rpx;
+  padding: 10rpx 20rpx 10rpx 5rpx;
+}
+.content-r-t{
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+margin-top: 10rpx;
+}
+.content-r-z{
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+color: #999;
+}
+.ss{
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #ddd;
+  border-top: 1rpx solid #ddd;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.ss-con{
+  width: 700rpx;
+  height: 50rpx;
+  border-radius: 10rpx;
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-around;
+
+}
+.ss-con-z{
+  width: 550rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+}
+.ss-con-z input{
+  width: 550rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  /* color: #fff;  */
+}
+.inputys{
+   color: #999; 
+}
+.ss-con-l{
+  width: 70rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ss-con-l image{
+  width: 35rpx;
+  height: 35rpx;
+}
+.sskb{
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #ddd;
+  border-top: 1rpx solid #ddd;
+}

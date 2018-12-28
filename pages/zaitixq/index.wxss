@@ -1,0 +1,199 @@
+/* pages/wangye/index.wxss */
+@import "../../wxParse/wxParse.wxss";
+page{
+  background-color: #F6F6F6;
+}
+.content{
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+ 
+}
+.content-t{
+  width: 100%;
+}
+.content-t image{
+  width: 100%;
+}
+.banner{
+ width: 100%;
+ height: 450rpx;
+}
+.bannerpic{
+   width: 100%;
+ height: 450rpx;
+}
+.bannerpic image{
+   width: 100%;
+ height: 450rpx;
+}
+.dizhi{
+  width: 100%;
+  height: 245rpx;
+   background-color: #FFF;
+}
+.dizhi-t{
+  width: 100%;
+  padding: 25rpx 0rpx 25rpx 0rpx;
+  font-size: 34rpx;
+  color: #000;
+}
+.dizhi-z{
+  width: 100%;
+  font-size: 24rpx;
+  color: #999;
+  display: flex;
+  align-items: center;
+  padding: 3rpx 0;
+}
+.dizhicon{
+  width: 100%;
+  height: 42rpx;
+  line-height: 42rpx;
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #999;
+}
+.dizhicon image{
+  width: 28rpx;
+  height:28rpx;
+  margin-right: 10rpx;
+}
+.dizhicon span{
+  margin-left: 20rpx;
+}
+.dizhiconname{
+  font-size: 28rpx;
+  color: #222;
+}
+.dizhi2{
+  width: 100%;
+  padding: 10rpx 25rpx;
+  /* border-bottom: 1rpx solid #ddd; */
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  background-color: #FFF;
+   border-bottom: 1rpx dashed #999;
+}
+.dizhi-l{
+  width: 330rpx;
+  height: 100%;
+}
+.dizhi-r{
+  width: 360rpx;
+  height: 100%;
+}
+.dizhi-l-t{
+  width: 100%;
+  padding: 6rpx 0;
+  font-size: 30rpx;
+}
+.dizhi-l-t text{
+  color: red;
+  margin-left: 15rpx;
+}
+.dizhidt{
+  width: 100%;
+  height:625rpx;
+   background-color: #FFF;
+}
+.anniu{
+  width: 200rpx;
+  height: 40rpx;
+  margin: 20rpx 0 10rpx 0;
+  border-radius: 20rpx;
+  background-color: #378ff9;
+  color: #fff;
+  font-size: 22rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+.daohang{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.daohang view{
+  width: 80%;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  background-color: #378ff9;
+  color: #fff;
+  font-size: 24rpx;
+}
+#map{
+  width: 100%;
+  height: 548rpx;
+}
+.dizhi{
+  width: 100%;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+}
+.dizhiname{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+}
+.dwkb{
+  width: 100%;
+  height: 112rpx;
+}
+.dw{
+  width: 100%;
+  height: 112rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+.dw-l{
+  width: 150rpx;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-flow: column;
+  font-size: 20rpx;
+  color: #7f8389;
+}
+.dw-l cover-image{
+  width: 46rpx;
+  height: 46rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+ 
+}
+.dw-z{
+  width: 270rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 25rpx;
+}
+.dw-z cover-view{
+   width: 270rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  color: #fff;
+  /* background: -webkit-linear-gradient(#2888D3, #46A2E9);  
+  background: -o-linear-gradient(#2888D3, #46A2E9);  
+  background: -moz-linear-gradient(#2888D3, #46A2E9);  */
+  border-radius: 40rpx;
+  background-color:  #46A2E9;
+  text-align: center;
+  line-height: 80rpx;
+}

@@ -1,0 +1,67 @@
+<view class='dw'>
+<view>
+<view class="{{typeid==1?'dw-con-l bjys':'dw-con-l bjys2'}}" catchtap='choosetypeid' id='1'>动态</view>
+<view class="{{typeid==2?'dw-con-r bjys':'dw-con-r bjys2'}}" catchtap='choosetypeid' id='2'>问答</view>
+</view>
+</view>
+<view class='dwkb'></view>
+<block wx:for="{{sjlist}}" wx:key='*' >
+<view class='out-out' wx:if='{{item.Img.length>1}}'>
+  <view class='user-con2'>
+    <view class='user-con2-l'>
+      <image src='{{href}}/{{item.HeadImage}}'></image>
+    </view>
+    <view class='user-con2-r'>
+      <view class='user-con2-r-l'>
+        <view class='user-con2-r-l-con'>
+          <view class='user-con2-r-l-con-t'>{{item.UserName}}</view>
+          <view class='user-con2-r-l-con-b'>{{item.cityName}} {{item.Time}}</view>
+        </view>
+      </view>
+      <!-- <view class='user-con2-r-r'>
+          <image src='../../image/dian.png'></image>
+        </view> -->
+    </view>
+  </view>
+  <view class='piclist'>
+    <image src='{{child}}' wx:for="{{item.Img}}" wx:key="*" wx:for-item='child'></image>
+    
+  </view>
+  <view class='jianjie'>{{item.Detail}}</view>
+  <view class='fx'>
+    <view class='fx-con'>评 论 {{item.ReplyCount}}</view>
+    <view class='fx-con'>分 享</view>
+    <view class='fx-con' catchtap='dianzan' id='{{item.id}}'>点 赞 {{item.like}}</view>
+  </view>
+</view>
+  <view class='out-out' wx:if='{{item.Img.length<2}}'>
+  <view class='user-con2'>
+    <view class='user-con2-l' >
+     <image src='{{imgurl}}/xcximage/zwpic.png' wx:if="{{item.HeadImage.length<4}}"></image>
+      <image src='{{href}}/{{item.HeadImage}}' wx:if="{{item.HeadImage.length>4}}"></image>
+    </view>
+    <view class='user-con2-r'>
+      <view class='user-con2-r-l'>
+        <view class='user-con2-r-l-con'>
+           <view class='user-con2-r-l-con-t'>{{item.UserName}}</view>
+          <view class='user-con2-r-l-con-b'>{{item.cityName}} {{item.Time}}</view>
+        </view>
+      </view>
+      <!-- <view class='user-con2-r-r'>
+          <image src='../../image/dian.png'></image>
+        </view> -->
+    </view>
+  </view>
+  <view class='piclist2' wx:if='{{item.Img.length==1}}'>
+    <image src='{{item.Img[0]}}' ></image>
+
+  </view>
+  <view class='jianjie'>{{item.Detail}}</view>
+  <view class='fx'>
+    <view class='fx-con'>评 论 {{item.ReplyCount}}</view>
+    <view class='fx-con'>分 享</view>
+    <view class='fx-con'catchtap='dianzan' id='{{item.id}}'>点 赞 {{item.like}}</view>
+  </view>
+</view>
+</block>
+<view wx:if="{{sjlist.length==0}}" class='zwsj'>暂无数据</view>

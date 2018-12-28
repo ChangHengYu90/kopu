@@ -1,0 +1,13 @@
+<view class='set-con' catchtap='goxgzl'>
+  资料修改
+  <image src="{{imgurl}}/xcximage/gzt9.png"></image>
+</view>
+<view class='set-con' catchtap='goxgmm'>
+  密码修改
+  <image src="{{imgurl}}/xcximage/gzt9.png"></image>
+</view>
+<!-- <view class='set-con' >
+  
+  <image src="{{imgurl}}/xcximage/gzt9.png"></image>
+</view> -->
+<view class='tuichu' catchtap='gotuichu'>退出</view>

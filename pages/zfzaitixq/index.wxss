@@ -1,0 +1,43 @@
+@import "../../wxParse/wxParse.wxss";
+.pic{
+  width: 100%;
+  height: 400rpx;
+}
+.pic image{
+  width: 100%;
+  height: 400rpx;
+}
+.title{
+  width: 100%;
+  padding: 10rpx;
+  box-sizing: border-box;
+  font-size: 34rpx;
+}
+.xtitle{
+  width: 100%;
+  padding: 5rpx 10rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+.content{
+  width: 100%;
+  padding: 25rpx;
+  box-sizing: border-box;
+}
+.zxsqkb{
+  width: 100%;
+  height: 80rpx;
+ 
+}
+.zxsq{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: #378ff9;
+  color: #fff;
+  font-size: 30rpx;
+}

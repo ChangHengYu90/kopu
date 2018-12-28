@@ -1,0 +1,50 @@
+/* pages/zszy/index.wxss */
+page{
+ background-color: #f6f6f6
+}
+.zszy{
+  width: 100%;
+  height: 220rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+  background-color: #fff;
+  padding: 0 25rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box
+}
+.zszy-l{
+  width: 192rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.zszy-l image{
+  width: 192rpx;
+  height: 158rpx;
+}
+.zszy-r{
+  width: 480rpx;
+  height: 100%;
+}
+.zszy-r-t{
+  width: 100%;
+  padding-top: 35rpx;
+  padding-bottom: 5rpx;
+  margin-bottom: 15rpx;
+  font-size: 34rpx;
+  color: #222;
+   display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+overflow: hidden;
+}
+.zszy-r-b{
+  width: 100%;
+  font-size: 28rpx;
+  color: #777;
+   display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+}

@@ -1,0 +1,172 @@
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>公司名称/个人</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+        <!-- <input placeholder='请输入项目名称'></input> -->
+        <input placeholder='公司名称/个人' maxlength='40' bindinput='hqxmname' type='text'></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>申请类型</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-leix' catchtap='choosesqlx' id='1'>
+        <image src="{{sqlx==1?'/image/yx.png':'/image/wx.png'}}"></image>
+        承租方
+      </view>
+      <view class='xmname-z-leix' catchtap='choosesqlx' id='2'>
+        <image src="{{sqlx==2?'/image/yx.png':'/image/wx.png'}}"></image>
+        出租方
+       
+      </view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>地址</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+        <!-- <input placeholder='请输入项目名称'></input> -->
+        <input placeholder='地址' type='text'  bindinput='hqdizhi'></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view>
+<view class='kb'></view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>房屋面积</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+        <!-- <input placeholder='请输入项目名称'></input> -->
+        <input placeholder='房屋面积m²' type='digit' bindinput='hqmianji' ></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>房屋单价</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+        <!-- <input placeholder='请输入项目名称'></input> -->
+        <input placeholder='￥/m²' type='digit' bindinput='hqdanjia'></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>月租</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+        <!-- <input placeholder='请输入项目名称'></input> -->
+        <input placeholder='￥/月' type='digit'  bindinput='hqyuezu'></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>缴费周期</view>
+     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class='xmname-z'>
+     
+        <view class="{{jfzq=='请选择缴费周期'?'xmname-z-l yanse':'xmname-z-l'}}">
+          {{jfzq}}
+          <!-- <input placeholder='请输入项目名称' disabled='true' value='{{leixing}}'></input> -->
+        </view>
+        <view class='xmname-z-r'>
+        <image src='/image/more.png'></image>
+        </view>
+      
+    </view>
+    </picker>
+  </view>
+</view>
+<view class='kb'></view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>申请金额</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+        <!-- <input placeholder='请输入项目名称'></input> -->
+        <input placeholder='请填写申请金额' type='text'  bindinput='hqsqje'></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view>
+
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>申请分期期限</view>
+     <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+    <view class='xmname-z'>
+     
+        <view class="{{jfzq2=='请选择分期期限'?'xmname-z-l yanse':'xmname-z-l'}}">
+          {{jfzq2}}
+          <!-- <input placeholder='请输入项目名称' disabled='true' value='{{leixing}}'></input> -->
+        </view>
+        <view class='xmname-z-r'>
+        <image src='/image/more.png'></image>
+        </view>
+      
+    </view>
+    </picker>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>申请分期利息</view>
+     <picker bindchange="bindPickerChange3" value="{{index3}}" range="{{array3}}">
+    <view class='xmname-z'>
+     
+        <view class="{{jfzq3=='请选择分期利息'?'xmname-z-l yanse':'xmname-z-l'}}">
+          {{jfzq3}}
+          <!-- <input placeholder='请输入项目名称' disabled='true' value='{{leixing}}'></input> -->
+        </view>
+        <view class='xmname-z-r'>
+        <image src='/image/more.png'></image>
+        </view>
+      
+    </view>
+    </picker>
+  </view>
+</view>
+<view class='kb'></view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>联系人</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+        <!-- <input placeholder='请输入项目名称'></input> -->
+        <input placeholder='请填写联系人' type='text' bindinput='hqlxr'></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>联系电话</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+        <!-- <input placeholder='请输入项目名称'></input> -->
+        <input placeholder='联系电话' type='number' bindinput='hqphone'></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view>
+
+ <view class='submit' catchtap='submit' style=" background-image: url({{imgurl}}/xcximage/lansbj.png)" >提交申请</view>

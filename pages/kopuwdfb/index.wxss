@@ -1,0 +1,46 @@
+.fb{
+  width: 100%;
+  padding: 0 60rpx;
+  box-sizing: border-box;
+}
+.fb-t{
+  width: 100%;
+  padding-top: 56rpx;
+  padding-bottom: 28rpx;
+  font-size: 28rpx;
+  color: rgb(126, 126, 126)
+}
+textarea{
+  width: 630rpx;
+  height: 363rpx;
+  background-color: #eee;
+  font-size: 24rpx;
+  color: rgb(152, 152, 152);
+  padding: 15rpx;
+  box-sizing: border-box;
+  line-height: 1.2
+}
+.submitkb{
+  width: 100%;
+  height: 80rpx;
+}
+.submit{
+  width: 100%;
+  height: 80rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.submit view{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  color: #fff;
+  background-color: rgb(82, 164, 250);
+  border-radius: 20rpx;
+
+}

@@ -1,0 +1,12 @@
+<view class="content" wx:for="{{xmlist}}" wx:key="*" wx:for-index="index" data-index="{{index}}" bindlongpress='longTa' id='{{item.id}}' catchtap='goxiugai' >
+  <view class="content-l">
+    <image src='{{item.imgurl[0]}}'></image>
+  </view>
+  <view class="content-r">
+    <view class="content-r-t">
+      <view class="content-r-t-t">{{item.title}}</view>
+        <view class="content-r-t-b">{{item.content}}</view>
+    </view>
+  </view>
+</view>
+<view class='zwshuju' wx:if="{{xmlist.length==0}}">暂无数据</view>

@@ -1,0 +1,248 @@
+@import "../../teml/cascade.wxss";
+page {
+  background-color: rgb(250, 250, 250);
+}
+
+.sy-ss {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+
+  z-index: 99;
+}
+.sy-sskb {
+  width: 100%;
+  height: 90rpx;
+
+}
+
+.sy-ss-l {
+  width: 105rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sy-ss-l image {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.sy-ss-r {
+  width: 105rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sy-ss-r image {
+  height: 40rpx;
+  width: 50rpx;
+}
+
+.sy-ss-z {
+  width: 540rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sy-ss-z-con {
+  width: 100%;
+  height: 55rpx;
+  background-color: rgb(216, 216, 216);
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.sy-ss-z-con-l {
+  height: 100%;
+  width: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sy-ss-z-con-l image {
+  height: 30rpx!important;
+  width: 25rpx!important;
+}
+
+.sy-ss-z-con-r {
+  width: 480rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sy-ss-z-con-r input {
+  width: 480rpx;
+  height: 100%;
+  font-size: 24rpx;
+}
+
+.banner {
+  width: 100%;
+  height: 350rpx;
+}
+
+
+.banner image {
+  width: 100%;
+  height: 100%;
+}
+.quyu{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid #ddd;
+  font-size: 30rpx;
+}
+.content{
+  width: 100%;
+  height: 200rpx;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-l{
+  width: 300rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-l image{
+  width: 240rpx;
+  height: 180rpx;
+}
+.content-r{
+  width: 475rpx;
+  height: 100%;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+}
+.content-r-t{
+  height: 70rpx;
+  width: 100%;
+  line-height: 96rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.content-r-b{
+  width: 100%;
+  font-size: 22rpx;
+  padding-top: 10rpx;
+ display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+/* overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+color: #999; */
+}
+.dw{
+  width: 100%;
+  position: fixed;
+  top: 0rpx;
+  background-color: #fff;
+}
+.dwkb{
+  width: 100%;
+  height: 430rpx;
+}
+.zwshuju{
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #999;
+}
+/* 新的 */
+.user{
+  width: 100%;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+
+}/* 新家的样式 */
+.newys{
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 0;
+}
+.newys-l{
+  width:480rpx;
+  padding-top: 5rpx;
+  font-size: 34rpx;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+}
+.newys-r{
+  width: 200rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.newys-r image{
+  width: 200rpx;
+  height: 155rpx;
+ 
+}
+.userjs{
+  width: 100%;
+  padding-top: 25rpx;
+  margin-bottom: 25rpx;
+  color: #222;
+  font-size: 34rpx;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+}
+.userpic{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+
+}
+.userpic image{
+  width: 226rpx;
+  height: 172rpx; 
+  margin-bottom: 15rpx;
+}
+.userpic2{
+  width: 100%;
+ 
+
+}
+.userpic2 image{
+  width:100%;
+  /* height: 310rpx;  */
+  margin-bottom: 15rpx;
+}
+.userpic::after{
+  content: '';
+  width: 172rpx;
+}

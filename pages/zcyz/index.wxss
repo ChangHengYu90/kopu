@@ -1,0 +1,78 @@
+
+/* .zsfw{
+  width: 100%;
+  height: 270rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 39rpx;
+}
+.zsfw-l{
+  width: 185rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.zsfw-l image{
+  width: 158rpx;
+  height: 179rpx;
+  border-radius: 20rpx;
+}
+.zsfw-r{
+  width: 485rpx;
+  height: 100%;
+
+}
+.zsfw-r-t{
+  padding-top: 65rpx;
+  font-size: 30rpx;
+  color: rgb(137, 136, 136);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.zsfw-r-b{
+  padding-top: 32rpx;
+  font-size: 22rpx;
+  color: rgb(172, 172, 172);
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+} */
+page{
+ background-color: #f6f6f6;
+}
+.zwshuju{
+  width: 100%;
+  height: 750rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #999;
+}
+.zcyz{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.zcyz-con{
+  width: 235rpx;
+  height: 126rpx;
+  background-color: #fff;
+  line-height: 126rpx;
+  text-align: center;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+margin-bottom: 4rpx;
+}
+.zcyz::after{
+  content: '';
+  width:235rpx;
+}

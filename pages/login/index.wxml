@@ -1,0 +1,96 @@
+<!-- <view class="top" style="background-image: url('{{imgurl}}/xcximage/loginBack.png')">
+  <view class="txpic">
+    <image src='/image/logo.png'></image>
+  </view>
+</view>
+<view class='user'>
+  <view class='user-l'>
+    <image src='{{imgurl}}/xcximage/6.png'></image>
+  </view>
+  <view class='user-r'>
+    <input placeholder='请输入账号/手机号' placeholder-style='color:#CBCBCB' bindinput='hqphone'></input>
+  </view>
+</view>
+<view class='user'>
+  <view class='user-l'>
+    <image src='{{imgurl}}/xcximage/2.png'></image>
+  </view>
+  <view class='user-r2'>
+    <input placeholder='请输入密码' placeholder-style='color:#CBCBCB' password='{{isShowPassword}}' bindinput='hqpwd'></input>
+    <image src='{{imgurl}}/xcximage/3.png' id='{{typeid}}' bindtap='toggleShowPassword'wx:if='{{isShowPassword}}'></image>
+    <image src='{{imgurl}}/xcximage/3.png' id='{{typeid}}' bindtap='toggleShowPassword'wx:if='{{!isShowPassword}}'></image>
+  </view>
+</view>
+<view class='dl'>
+<view class='submit' catchtap='submit'>登录</view>
+</view>
+<view class='wjzc'>
+<view catchtap='gowjpassword'>忘记密码？</view>
+<view catchtap='gozc'>账号注册</view>
+</view>  -->
+<view class='newtop'>
+  <view class='newtopcon'>
+    <image src='/image/logo.png'></image>
+  </view>
+</view>
+<block wx:if="{{typeid==2}}">
+<view class='newzh'>
+  <view class='newzhcon'>
+    <view class='newzhcon-l'>
+      <image src='/image/phone.png'></image>
+      <input placeholder='请输入手机号' type="number" value='{{phone}}' maxlength='11' bindinput='hqphone'></input>
+    </view>
+    <view class='newzhcon-r' wx:if="{{phone.length>0}}">
+      <image src='/image/sjclose.png' catchtap='goqcphone'></image>
+    </view>
+  </view>
+  <view class='newzhcon'>
+    <view class='newzhcon-l'>
+      <image src='/image/yzm.png'></image>
+      <input placeholder='请输入验证码'  type='number'  bindinput='hqpwd'></input>
+    </view>
+    <view class='newzhcon-r' catchtap='huoquyzm'  id="{{zcbtn}}">
+      {{ VerifyCode}}
+    </view>
+  </view>
+</view>
+<view  class='yzmdlys'>用户若没注册系统会自动注册</view>
+<view class='newdl2'>
+  <view class="{{isshow1==1?'newdlcon newyanse2':'newdlcon newyanse'}}" catchtap='dengl'>登录</view>
+</view>
+<view class='newdltype'>
+  <view class='newdltypecon'>
+    <view class='newdltypecon-l' catchtap='gommdl'>密码登录</view>
+    <view class='newdltypecon-r' catchtap='gozc'>注册</view>
+  </view>
+</view>
+</block>
+<block wx:if="{{typeid==1}}">
+<view class='newzh' >
+  <view class='newzhcon'>
+    <view class='newzhcon-l'>
+      <image src='/image/phone.png'></image>
+      <input placeholder='请输入手机号'  type="number" value='{{phone2}}' maxlength='11' bindinput='hqphone2'></input>
+    </view>
+    <view class='newzhcon-r' wx:if="{{phone2.length>0}}">
+      <image src='/image/sjclose.png' catchtap='goqcphone2' ></image>
+    </view>
+  </view>
+  <view class='newzhcon'>
+    <view class='newzhcon-l'>
+      <image src='/image/yzm.png'></image>
+      <input placeholder='请输入密码' bindinput='hqpwd2' password='true' ></input>
+    </view>
+    
+  </view>
+</view>
+<view class='newdl'>
+  <view class="{{isshow2==1?'newdlcon newyanse2':'newdlcon newyanse'}}" catchtap='submit'>登录</view>
+</view>
+<view class='newdltype'>
+  <view class='newdltypecon'>
+    <view class='newdltypecon-l' catchtap='shoujidl'>手机号登陆</view>
+    <view class='newdltypecon-r' catchtap='gowjpassword' >忘记密码</view>
+  </view>
+</view>
+</block>

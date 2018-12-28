@@ -1,0 +1,37 @@
+<view class='kopuwdout'>
+  <view class='wt'>
+    <view class='wttotle'>{{title}}</view>
+    <view class='hdnum'>
+      <view class='hdnum-l'>{{hdnum}}个回答</view>
+      <view class='hdnum-r'>积分悬赏：{{jf}}</view>
+    </view>
+    <view class='wyhd' catchtap='woyaohd'>我要回答</view>
+  </view>
+  <view class='hd' wx:for="{{pl}}" wx:key="*">
+    <view class='hd-t'>
+      <view class='hd-t-l'>
+        <image src='{{href}}{{item.HeadImage}}'></image>
+      </view>
+      <view class='hd-t-r'>
+        <view class='hd-t-r-t'>{{item.UserName}}</view>
+        <view class='hd-t-r-b'>{{item.Time}}</view>
+      </view>
+    </view>
+    <view class='hd-b'>
+      {{item.Detail}}
+    </view>
+  </view>
+
+</view>
+<view class='hufb' wx:if="{{wyhd==2}}" bindtap='gbpl'>
+  <view class='hufb-con' catchtap='bugnpl'>
+    <view class='hufb-con-top'>
+      <view class='hufb-con-top-l'></view>
+      <view class='hufb-con-top-z'>发表评价</view>
+      <view class='hufb-con-top-l' catchtap='fbpjcon'>发布</view>
+    </view>
+    <view class='pjnr'>
+    <textarea maxlength='500' placeholder='请输入评价内容（限500字）' bindinput='hqpkcon'></textarea>
+    </view>
+  </view>
+</view>

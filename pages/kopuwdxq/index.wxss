@@ -1,0 +1,85 @@
+.kopuwdout{
+  width: 100%;
+  padding: 38rpx 45rpx;
+  box-sizing: border-box;
+}
+.wt{
+  border-bottom: 1rpx solid #ddd; 
+}
+.wttotle{
+  width: 100%;
+  font-size: 30rpx;
+  color: rgb(118, 118, 118)
+}
+.hdnum{
+  width: 100%;
+  padding-top: 19rpx;
+  padding-bottom: 45rpx;
+  display: flex;
+  flex-direction: row;
+}
+.hdnum-l{
+  font-size: 16rpx;
+  color: rgb(118, 118, 118);
+  margin-right: 20rpx;
+}
+.hdnum-r{
+  font-size: 16rpx;
+  color: rgb(89, 170, 250);
+}
+.wyhd{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 22rpx;
+  color: rgb(89, 170, 250);
+  text-shadow: #707170 2rpx 3rpx 2rpx;
+  padding-bottom: 17rpx;
+}
+.hd{
+  border-bottom: 1rpx solid #ddd;
+}
+.hd-t{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.hd-t-l{
+  width: 74rpx;
+  padding-top: 38rpx;
+  margin-right: 34rpx;
+}
+.hd-t-l image{
+  width: 74rpx;
+  height: 74rpx;
+  border-radius: 50%;
+}
+.hd-t-r{
+  width: 520rpx;
+  padding-top: 50rpx;
+}
+.hd-t-r-t{
+  font-size: 24rpx;
+  color: rgb(118, 118, 118);
+  padding-bottom: 11rpx;
+}
+.hd-t-r-b{
+  font-size: 18rpx;
+  color: rgb(89, 170, 250);
+ padding-bottom: 39rpx;
+}
+.hd-b{
+  
+  padding-bottom: 30rpx;
+}
+.hd-b-title{
+  width: 100%;
+  font-size: 24rpx;
+  color: rgb(118, 118, 118);
+  padding-bottom: 22rpx;
+}
+.hd-b-con{
+  font-size: 20rpx;
+  color: rgb(118, 118, 118);
+  line-height: 1.7;
+}

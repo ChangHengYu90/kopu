@@ -1,0 +1,21 @@
+<!-- 
+<view class="zsfw" wx:for="{{list}}" wx:key="*" id="{{item.id}}" data-img="{{item.img}}" data-name="{{item.name}}" data-content="{{item.detai}}" catchtap='golookxq'>
+  <view class="zsfw-l">
+    <image src='{{item.img}}'></image>
+  </view>
+  <view class="zsfw-r">
+    <view class="zsfw-r-t">
+      {{item.title}}
+    </view>
+    <view class="zsfw-r-b">
+      {{item.detail}}
+    </view>
+  </view>
+</view> -->
+<view class='zwshuju' wx:if="{{citylist.length==0}}">暂无数据</view>
+<view class='zcyz'>
+  <view class='zcyz-con' wx:for="{{citylist}}" wx:key="*" id='{{item.ID}}' data-name="{{item.DistrictName}}" catchtap='golookxq'>
+    {{item.DistrictName}}
+  </view>
+
+</view>

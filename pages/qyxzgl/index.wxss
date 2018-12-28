@@ -1,0 +1,230 @@
+/* pages/qyxzgl/index.wxss */
+/* .qyxzgl{
+  width: 100%;
+  padding: 40rpx 44rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #ACACAC;
+  display: flex;
+  flex-direction: row;
+}
+.qyxzgl-l{
+  width:195rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qyxzgl-l-con-t{
+   font-size: 60rpx;
+   color: #53A5FA;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 25rpx;
+}
+.qyxzgl-l-con-b{
+   font-size: 30rpx;
+   color: #53A5FA;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.qyxzgl-r{
+  width: 465rpx;
+  height: 100%;
+}
+.qyxzgl-r-t{
+  width: 100%;
+  font-size: 30rpx;
+  color: #898888;
+  padding-bottom: 22rpx;
+}
+.qyxzgl-r-z{
+   width: 100%;
+  font-size: 20rpx;
+  color: #898888;
+  padding-bottom: 13rpx;
+}
+.qyxzgl-r-b{
+   width: 100%;
+  font-size: 22rpx;
+  color: #898888;
+  padding-bottom: 25rpx;
+}
+.qyxzgl-r-anniu{
+  width: 100%;
+  height: 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+.qyxzgl-r-anniu-con{
+  width: 125rpx;
+  height: 40rpx;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
+  color: #FAFBFC;
+  margin-right: 17rpx;
+  background-size: 100% 100%;
+} */
+/* 遮罩 */
+.zz{
+  width: 100%;
+  background-color: rgba(112, 112, 112, .5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.zz-con{
+  width: 478rpx;
+  height: 478rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+}
+.zz-con-t{
+  width: 100%;
+  padding-top: 57rpx;
+  padding-bottom: 30rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #52A3FA;
+}
+.zz-con-b{
+  width: 100%;
+  padding: 0 87rpx;
+  box-sizing: border-box;
+}
+.zz-con-b1{
+  width: 100%;
+  height: 58rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+   background: -webkit-linear-gradient(0deg, rgb(60, 158, 250), rgb(118, 181, 251));
+   /* border-radius: 10px; */
+  border: 1px solid #fff;
+  margin-bottom: 18rpx;
+}
+.zz-con-b2{
+  width: 100%;
+  height: 56rpx;
+  background: linear-gradient(to right, rgb(60, 158, 250), rgb(118, 181, 251));
+  -webkit-background-clip: text;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+   border:1px transparent solid;
+   border-image:linear-gradient(to right,rgb(60, 158, 250), rgb(118, 181, 251)) 1 10;
+  margin-bottom: 18rpx;
+}
+.lljlkb{
+  width: 100%;
+  height: 80rpx;
+}
+.lljl{
+  width: 100%;
+  height: 80rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background-color: #52A3FA;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zwshuju{
+  width: 100%;
+  height: 750rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #999;
+  
+}
+.newqyxzgl{
+  width: 100%;
+  height: 220rpx;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #ddd;
+}
+.newqyxzgl-l{
+  width: 220rpx;
+  height: 100%;
+}
+.newqyxzgl-l-t{
+  width: 100%;
+  height: 130rpx;
+  display: flex;
+  justify-content: center;
+}
+.newqyxzgl-l-tcon{
+  width: 110rpx;
+  height: 110rpx;
+  border: 5rpx solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #58A1FF;
+  font-size: 36rpx;
+}
+.newqyxzgl-l-b{
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: #999;
+}
+.newqyxzgl-r{
+  width: 500rpx;
+  height: 100%;
+  padding-right: 25rpx;
+
+}
+.newqyxzgl-r-t{
+  width: 100%;
+  height: 60rpx;
+  font-size: 34rpx;
+  color: #222;
+}
+.newqyxzgl-r-z{
+  width: 100%;
+  height: 60rpx;
+  font-size: 26rpx;
+  color: #777;
+}
+.newqyxzgl-r-b{
+  width: 100%;
+  height: 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+.newqyxzgl-r-b-con{
+  width: 145rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #222;
+}
+.newqyxzgl-r-b-con image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}

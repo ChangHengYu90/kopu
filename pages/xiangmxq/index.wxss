@@ -1,0 +1,156 @@
+
+page{
+  background-color: #f6f6f6
+}
+.top {
+  width: 100%;
+  padding: 45rpx 40rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.top-l {
+  width: 180rpx;
+}
+
+.top-l image {
+  width: 158rpx;
+  height: 179rpx;
+  border-radius: 20rpx;
+}
+
+.top-r {
+  width: 490rpx;
+  height: 100%;
+}
+
+.top-r-t {
+  width: 490rpx;
+  padding: 30rpx 0 20rpx 0;
+  font-size: 30rpx;
+  color: #898888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.top-r-b{
+  width: 100%;
+  font-size: 24rpx;
+  color: #999;
+}
+.jbzl{
+  width: 100%;
+  padding: 0 40rpx;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  color: #898888;
+  font-size: 24rpx;
+  height: 70rpx;
+  border-bottom: 1rpx solid #ddd;
+   background-color: #fff;
+   margin-top: 15rpx;
+}
+.jbzl2{
+  width: 100%;
+  padding: 0 40rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  color: #50A3FA;
+  font-size: 24rpx;
+  height: 70rpx;
+  background-color: #fff;
+
+}
+.jbzl2 view{
+  padding-right: 50rpx;
+}
+.jbzlzl{
+   width: 100%;
+  padding: 20rpx 40rpx;
+  background-color: #fff;
+  font-size: 24rpx;
+  color: #999;
+  box-sizing: border-box;
+  max-height: 350rpx;
+  overflow: scroll;
+}
+.tdcy{
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+  background-color: #fff
+}
+.tdcy-l{
+  width: 160rpx;
+  height: 140rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tdcy-l-con{
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #999;
+  color: #fff;
+}
+.tdcy-r{
+  width: 590rpx;
+  height: 140rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tdcy-r-con{
+  width: 100%;
+}
+.tdcy-r-con-t{
+  font-size: 28rpx;
+  color: #444;
+  padding-bottom: 15rpx;
+}
+.tdcy-r-con-t text{
+  font-size: 24rpx;
+  color: #999;
+}
+.tdcy-r-con-b{
+  font-size: 24rpx;
+  color: #999;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp:2;
+overflow: hidden;
+}
+.bottomkb{
+  width: 100%;
+  height: 90rpx;
+}
+.bottom{
+  width: 100%;
+  height: 90rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff
+}
+.bottom view{
+  width: 50%;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #50A3FA
+}

@@ -1,0 +1,13 @@
+<view class="zsfw" wx:for="{{list}}" wx:key="*" id="{{item.id}}" data-img="{{item.img}}" data-name="{{item.name}}" data-content="{{item.detai}}" catchtap='golookxq'>
+  <view class="zsfw-l">
+    <image src="{{item.img.length==0?'/image/zwf.png':'item.img'}}"></image>
+  </view>
+  <view class="zsfw-r">
+    <view class="zsfw-r-t">
+      {{item.name}}
+    </view>
+    <view class="zsfw-r-b">
+      {{item.detai}}
+    </view>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<view class="sixin">
+  <view class="sixin-con">
+    <view class="sixin-con-l">
+      <view class="sixin-con-l-l">
+        <image src='{{imgurl}}/newpic/19.png'></image>
+      </view>
+      <view class="sixin-con-l-r">
+         <view class="sixin-con-l-r-t">
+           谢霆锋
+      </view>
+      <view class="sixin-con-l-r-b">
+           饰演亦正亦邪的杨过而成名
+      </view>
+      </view>
+    </view>
+    <view class="sixin-con-r">
+      <view class="sixin-con-r-l">
+        私信
+      </view>
+      <view class="sixin-con-r-r">
+        关注
+      </view>
+    </view>
+  </view>
+</view>

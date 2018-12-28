@@ -1,0 +1,322 @@
+<view class='sy-ss'>
+  <view class='sy-ss-l'>
+  <view class='sy-ss-lcon' catchtap='choosecity'>
+    <view class='sy-ss-lcon-l'>{{city}}</view>
+   <image src='{{imgurl}}/newpic/44.png'></image>
+  </view>
+    <!-- <image src='{{imgurl}}/xcximage/syuser.png'></image> -->
+  
+    
+  </view>
+  <view class='sy-ss-z'>
+    <view class='sy-ss-z-con'>
+      <view class='sy-ss-z-con-l'>
+        <image src='/image/16.png'></image>
+      </view>
+      <view class='sy-ss-z-con-r'>
+        <input placeholder='搜索项目 领域 投资'></input>
+      </view>
+    </view>
+  </view>
+  <view class='sy-ss-r'catchtap='gologin' wx:if="{{isshow==1}}">
+     <image src='/image/logo.png'></image>
+  </view>
+  <view class='sy-ss-r'catchtap='gologin2' wx:if="{{isshow==2}}">
+     <image src='{{href}}{{user.headImage}}'></image>
+  </view>
+</view>
+<view class='sy-sskb'></view>
+<view class='banner'>
+  <swiper class="bannerpic" indicator-dots indicator-color='rgba(255,255,255,.6)' indicator-active-color='#fff' autoplay>
+    <swiper-item wx:for="{{banner}}" wx:key='*'>
+      <image src="{{item.img}}" catchtap='golookxqlb' data-name='{{item.companyName}}' data-content="{{item.detail}}" data-img="{{item.img}}"/>
+    </swiper-item>
+
+  </swiper>
+</view>
+<view class='tabcon'>
+  <view class='tabcon-con' catchtap='gozsxm'>
+    <view class='tabcon-con-t'>
+      <image src="/image/sy1.png" />
+    </view>
+    <view class='tabcon-con-b'>招商项目</view>
+  </view>
+  <view class='tabcon-con' catchtap='gozfzs'>
+    <view class='tabcon-con-t'>
+      <image src="/image/sy2.png" />
+    </view>
+    <view class='tabcon-con-b'>区域展示</view>
+  </view>
+  <view class='tabcon-con' catchtap='gozsfw'>
+    <view class='tabcon-con-t'>
+      <image src="/image/sy3.png" />
+    </view>
+    <view class='tabcon-con-b'>招商服务</view>
+  </view>
+  <view class='tabcon-con' catchtap='yqyy'>
+    <view class='tabcon-con-t'>
+      <image src="/image/sy4.png" />
+    </view>
+    <view class='tabcon-con-b'>园区运营</view>
+  </view>
+  <view class='tabcon-con' catchtap='goqyxz'>
+    <view class='tabcon-con-t'>
+      <image src="/image/sy5.png" />
+    </view>
+    <view class='tabcon-con-b'>企业选址</view>
+  </view>
+  <view class='tabcon-con' catchtap='goqyzc'>
+    <view class='tabcon-con-t'>
+      <image src="/image/sy6.png" />
+    </view>
+    <view class='tabcon-con-b'>区域政策</view>
+  </view>
+  <view class='tabcon-con' catchtap='gozcyz'>
+    <view class='tabcon-con-t'>
+      <image src="/image/sy7.png" />
+    </view>
+    <view class='tabcon-con-b'>人才申请</view>
+  </view>
+  <!-- <view class='tabcon-con' catchtap='gofuwu'>
+    <view class='tabcon-con-t'>
+      <image src="/image/sy8.png" />
+    </view>
+    <view class='tabcon-con-b'>合作机构</view>
+  </view> -->
+  <view class='tabcon-con' catchtap='gozijinsq'>
+    <view class='tabcon-con-t'>
+      <image src="/image/sy8.png" />
+    </view>
+    <view class='tabcon-con-b'>资金申请</view>
+  </view>
+</view>
+<!-- 区域载体 -->
+<!-- <view class='qyzt'>
+  <view class='qyzt-con' catchtap='goxiangmu'>
+    <view class='qyzt-condw' style="background-image: url('{{imgurl}}/xcximage/bj1.png');">
+      项目
+    </view>
+    <image src='{{imgurl}}/xcximage/sy02.png'></image>
+  </view>
+  <view class='qyzt-con' catchtap='gozaiti'>
+    <view class='qyzt-condw' style="background-image: url('{{imgurl}}/xcximage/bj4.png');">
+      载体
+    </view>
+    <image src='{{imgurl}}/xcximage/sy01.png'></image>
+  </view>
+  <view class='qyzt-con' catchtap='goquyu'>
+    <view class='qyzt-condw' style="background-image: url('{{imgurl}}/xcximage/bj2.png');">
+      区域
+    </view>
+    <image src='{{imgurl}}/xcximage/sy04.png'></image>
+  </view>
+  <view class='qyzt-con' catchtap='gofuwu'>
+    <view class='qyzt-condw' style="background-image: url('{{imgurl}}/xcximage/bj3.png');">
+      服务
+    </view>
+    <image src='{{imgurl}}/xcximage/sy03.png'></image>
+  </view>
+</view> -->
+<!-- 招商加盟 -->
+<view class='zsjm' catchtap='gohzfb'>
+  <image src='/image/zstp.jpg'></image>
+</view>
+<!-- 热门项目 -->
+<!-- <view class='hottitle'>
+  <view class='hottitle-l'>热门项目</view>
+  <view class='hottitle-r'>更多</view>
+</view>
+<view class='hot-con' wx:for="{{hotpro}}" wx:key="*"  wx:for-index="index"  id="{{item.pid}}" data-index='{{index}}' catchtap='goproxq'>
+  <view class='hot-con-l'>
+    <image src='{{item.pimage}}'></image>
+  </view>
+  <view class='hot-con-r'>
+    <view class='hot-con-r-t'>{{item.guanjianzi}}</view>
+    <view class='hot-con-r-z'>{{item.renc}}</view>
+     <view class='hot-con-r-b'>{{item.pmiaoshu}}</view>
+  </view>
+</view> -->
+<view class='newrmxm'>
+  <view class='newrmxm-t'>
+    <image src='/image/sylb.png'></image>
+    推客展示
+  </view>
+  <swiper autoplay="true" interval="3000" duration="500" vertical="true">
+    <swiper-item wx:for="{{tjcglist}}" wx:key="*">
+     <view class='newrmxm-con'>
+    <text>{{item.Hangye}}</text>{{item.ptitle}}</view>
+    </swiper-item>
+</swiper>
+
+</view>
+<view class='remenxm'>
+  <view class='remenxm-t'>
+    <view class='remenxm-t-l'>
+      <image src='/image/hotpic.png'></image>
+      热门项目
+    </view>
+    <view class='remenxm-t-r' catchtap='golookmore'>
+      查看更多
+      <image src='/image/more.png'></image>
+
+    </view>
+  </view>
+  <view class='remenxm-con' wx:for="{{hotpro}}" wx:key="*"  wx:for-index="index"  id="{{item.pid}}" data-index='{{index}}' catchtap='goproxq'>
+    <view class='remenxm-con-l'>
+      <image src='{{item.pimage}}'></image>
+    </view>
+    <view class='remenxm-con-r'>
+      <view class='remenxm-con-r-t'>
+        {{item.guanjianzi}}
+        <text>教育</text>
+      </view>
+      <view class='remenxm-con-r-b'>
+        {{item.pmiaoshu}}
+      </view>
+      <view class='remenxm-con-r-bb'>
+        <view><image src='{{imgurl}}/newpic/51.png'></image>{{item.renc}}</view>
+         <view><image src='{{imgurl}}/newpic/15.png'></image>{{item.Time}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='tabkb'></view>
+<view class='tab'>
+  <view class='tab-l'>
+    <view class='tab-con' catchtap='gosy'>
+      <view class='tab-con-t'>
+        <image src='/image/xm1.png'></image>
+      </view>
+      <view class='tab-con-b'>
+        项目
+      </view>
+    </view>
+    <view class='tab-con' catchtap='gozsq'>
+      <view class='tab-con-t'>
+        <image src='/image/zsq.png'></image>
+      </view>
+      <view class='tab-con-b'>
+    招商圈
+      </view>
+    </view>
+  </view>
+  <view class='tab-z'>
+    <view class='tab-z-con' catchtap='tabshow'>
+      <view class='tab-z-con-c'>
+        <image src='{{imgurl}}/newpic/6.png'></image>
+      </view>
+    </view>
+    <view class='zhongjianwz'>发布信息</view>
+  </view>
+  <view class='tab-l'>
+    <view class='tab-con' catchtap='gokopu'>
+      <view class='tab-con-t'>
+        <image src='/image/KOPU.png'></image>
+      </view>
+      <view class='tab-con-b'>
+        KOPU
+      </view>
+    </view>
+    <view class='tab-con' catchtap='gomy'>
+      <view class='tab-con-t'>
+        <image src='/image/my11.png'></image>
+      </view>
+      <view class='tab-con-b'>
+        我的
+      </view>
+    </view>
+  </view>
+</view>
+<view class="fabuzz" wx:if="{{tanisshow==2}}" catchtouchmove ="true">
+  <view class="fabuzz-t">选择发布信息的类型</view>
+
+  <view class='fabutype'>
+  <view class='fabutype-con' catchtap='gofabu' data-dizhi="../rule/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu4.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        招商推客
+      </view>
+    </view>
+    <view class='fabutype-con' catchtap='gofabu' data-dizhi="../kopuhaofb/index" >
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+           <image src='/image/fabu6.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        KOPU号
+      </view>
+    </view>
+    <view class='fabutype-con' catchtap='gofabu' data-dizhi="../hzjgfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu5.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        合作机构
+      </view>
+    </view>
+    <view class='fabutype-con'  catchtap='gofabu' data-dizhi="../xiangmfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu1.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布项目
+      </view>
+    </view>
+    <view class='fabutype-con'  catchtap='gofabu' data-dizhi="../qyxzfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu2.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布载体
+      </view>
+    </view>
+    <view class='fabutype-con'  catchtap='gofabu' data-dizhi="../zfxiangmfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu3.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        区域合作
+      </view>
+    </view>
+    
+    
+    
+    <!-- <view class='fabutype-con' catchtap='gofabu' data-dizhi="../newsfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu7.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布资讯
+      </view>
+    </view> -->
+    <!-- <view class='fabutype-con' catchtap='gofabu' data-dizhi="../zztjfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu8.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        招租推客
+      </view>
+    </view> -->
+  </view>
+  <view class='fabuclose'>
+    <image src='/image/close.png' catchtap='closetab'></image>
+  </view>
+</view>
+

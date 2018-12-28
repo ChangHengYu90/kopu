@@ -1,0 +1,14 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='content-t'>
+<image src='{{pic[0]}}'></image>
+</view>
+<view class='content'>
+
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+<view class='dwclasskb'></view>
+<view class='dwclass'>
+<view class='dwclass-l' catchtap='gozszy'>招商资源</view>
+<view class='dwclass-r' catchtap='gozszt'>招商载体</view>
+</view>
+

@@ -1,0 +1,42 @@
+<view class="gkk">
+  <view class="gkk-time">
+    发布时间：0000-00-00 点击量：300
+  </view>
+  <view class="gkk-time">
+    公开课时间：0000-00-00 点击量：300
+  </view>
+  <view class="gkk-time">
+    报名截止时间：0000-00-00 点击量：300
+  </view>
+  <view class="gkk-time">
+    公开课地址：0000-00-00 点击量：300
+  </view>
+  <view class="gkk-time">
+    公开课人数：0000-00-00 点击量：300
+  </view>
+  <view class='gkkjs'>公开课介绍：</view>
+  <view class='gkkjs-con'>科技收到货抠脚大汉接口是的和放假科室导航尽快发货圣诞节开发和就开始倒海翻江科室导航打开画法几何的会计法是导航放假收到货空间黄金时代</view>
+    <view class="gkk-time">
+    其他要求：无
+  </view>
+    <view class="gkk-time">
+    举办单位：看见好的 
+  </view>
+    <view class="gkk-time">
+    联系人：0000-00-00 
+  </view>
+  <view class="gkk-time">
+    联系电话：0000-00-00 
+  </view>
+  <view class='pic'>
+  <image src="{{imgurl}}/xcximage/banner.png" />
+  <image src="{{imgurl}}/xcximage/banner.png" />
+  <image src="{{imgurl}}/xcximage/banner.png" />
+  </view>
+  <view class='baoming'>
+    <view class='baoming-con'>
+      <view class='baoming-con-l'>关注</view>
+      <view class='baoming-con-r'>报名</view>
+    </view>
+  </view>
+</view>

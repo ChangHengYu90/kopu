@@ -1,0 +1,62 @@
+/* pages/rule/index.wxss */
+.gzsm{
+  padding-top: 60rpx;
+  padding-bottom: 50rpx;
+  font-size: 38rpx;
+  color: #000;
+  padding-left: 34rpx;
+  font-weight: 600;
+}
+.center{
+  width: 100%;
+  padding-left:75rpx;
+  padding-right:115rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: #2f2f2f;
+  padding-bottom: 30rpx;
+  display: flex;
+  flex-direction: row;
+
+}
+.center-l{
+  width: 60rpx;
+  
+}
+.center-r{
+   width: 500rpx;
+   line-height: 1.7;
+}
+.center-r span{
+  color: red
+}
+.center-l image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 5rpx;
+}
+.dwkb{
+  width: 100%;
+  height: 170rpx;
+}
+.dw{
+  width: 100%;
+  height: 170rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dw view{
+  width: 700rpx;
+  height: 82rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36rpx;
+  color: #fff;
+  background: linear-gradient(#2888D3, #46A2E9); /* 标准的语法 */
+  border-radius: 41rpx;
+
+}

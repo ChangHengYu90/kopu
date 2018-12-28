@@ -1,0 +1,28 @@
+<view class='tklx'>推客类型</view>
+<view class='leixing' catchtap='choosetype' id='1' >
+  <view class='leixingcon'>
+    <image src="{{chooseid==1?'/image/yx.png':'/image/wx.png'}}"></image>
+    企业选址
+  </view>
+</view>
+<view class='leixing' catchtap='choosetype' id='2' >
+  <view class='leixingcon'>
+    <image src="{{chooseid==2?'/image/yx.png':'/image/wx.png'}}"></image>
+    项目推荐
+  </view>
+</view>
+<view class='leixing' catchtap='choosetype' id='3'>
+  <view class='leixingcon'>
+    <image src="{{chooseid==3?'/image/yx.png':'/image/wx.png'}}"></image>
+    税收筹划
+  </view>
+</view>
+<view class='leixing' catchtap='choosetype' id='4' >
+  <view class='leixingcon'>
+    <image src="{{chooseid==4?'/image/yx.png':'/image/wx.png'}}"></image>
+    其他
+  </view>
+</view>
+<view class='qued'>
+<view class='quedan' catchtap='submit'>确定</view>
+</view>

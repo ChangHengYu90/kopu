@@ -1,0 +1,147 @@
+@import "../../teml/cascade.wxss";
+.dw{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 160rpx;
+  background-color: #fff;
+}
+.dwkb{
+  width: 100%;
+  height: 160rpx;
+}
+.dw-t{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  /* background-color: rgb(86, 169, 248) */
+}
+.ss{
+   width: 500rpx;
+   height: 50rpx;
+   border-radius: 10rpx;
+   background-color: #ddd;
+    display: flex;
+    flex-direction: row;
+}
+.ss-l{
+  width: 60rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ss-l image{
+  width: 30rpx;
+  height: 30rpx;
+
+}
+.ss-r{
+  width: 430rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.ss-r input{
+  width: 430rpx;
+  height: 90%;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+}
+.dw-b{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #ddd;
+}
+.dw-b view{
+  width: 25%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.dw-b picker{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.picker{
+  width: 100%!important;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.content{
+  width: 100%;
+  height: 200rpx;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-l{
+  width: 300rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-l image{
+  width: 240rpx;
+  height: 180rpx;
+}
+.content-r{
+  width: 475rpx;
+  height: 100%;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+}
+.content-r-t{
+  height: 75rpx;
+  width: 100%;
+  line-height: 96rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.content-r-b{
+  width: 100%;
+  font-size: 22rpx;
+  padding-top: 5rpx;
+ display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+overflow: hidden;
+display: flex;
+align-items: center;
+}
+
+.content-r-b image{
+  width:  20rpx;
+  height: 25rpx;
+  margin-right: 15rpx;
+}
+.yanse{
+  color: #58A1FF!important
+}
+.zwshuju{
+  width: 100%;
+  height: 600rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #999;
+}

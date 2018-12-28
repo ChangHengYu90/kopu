@@ -1,0 +1,26 @@
+<view class='gzsm'>规则说明</view>
+<view class='center' catchtap='gochoose' id='1'>
+  <view class='center-l' >
+    <image src="{{typeid==1?'/image/yx.png':'/image/wx.png'}}" ></image>
+  </view>
+  <view class='center-r'>1.项目推客：推荐项目，经审核， 给予
+    <span>5-20元</span>奖励</view>
+</view>
+<view class='center'  catchtap='gochoose' id='2'>
+  <view class='center-l'>
+     <image src="{{typeid==2?'/image/yx.png':'/image/wx.png'}}" ></image>
+  </view>
+  <view class='center-r'>2.引荐推客：引荐项目与平台对接，经审核， 给予
+    <span>50-100元</span>奖励</view>
+</view>
+<view class='center' catchtap='gochoose' id='3'>
+  <view class='center-l'>
+     <image src="{{typeid==3?'/image/yx.png':'/image/wx.png'}}"  ></image>
+  </view>
+  <view class='center-r'>3.预约推客：协助平台预约，与项目方沟通，经审核， 给予
+    <span>100-500元</span>奖励</view>
+</view>
+<view class='dwkb'></view>
+<view class='dw'>
+  <view catchtap='goxyb'>下一步</view>
+</view>

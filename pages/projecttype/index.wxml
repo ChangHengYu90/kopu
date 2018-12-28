@@ -1,0 +1,41 @@
+<view class="projecttype">
+  <view class="projecttype-t"></view>
+  <view class="projecttype-con">
+    <view class="projecttype-con-l">
+      <image src='http://ozr4vswg2.bkt.clouddn.com/745.png'></image>
+    </view>
+    <view class="projecttype-con-r">
+      <view class="projecttype-con-r-t">项目名称</view>
+      <view class="projecttype-con-r-z">项目名称</view>
+      <view class="projecttype-con-r-b">项目名称</view>
+    </view>
+  </view>
+  <view class='xmjd'>
+    <view class='xmjd-l'>正在审核中</view>
+    <view class='xmjd-r'>
+      <image src='http://ozr4vswg2.bkt.clouddn.com/745.png'></image>
+    </view>
+  </view>
+  <view class='xmjd'>
+    <view class='xmjd-l'>审核通过</view>
+    <view class='xmjd-r'>
+      <image src='http://ozr4vswg2.bkt.clouddn.com/745.png'></image>
+
+    </view>
+  </view>
+  <view class='xmjd'>
+    <view class='xmjd-l'>对接中</view>
+    <view class='xmjd-r'>
+      <image src='http://ozr4vswg2.bkt.clouddn.com/745.png'></image>
+
+    </view>
+  </view>
+  <view class='xmjd xmjd2'>
+    <view class='xmjd-l'>对接成功</view>
+    <view class='xmjd-r'>
+      <image src='http://ozr4vswg2.bkt.clouddn.com/745.png'></image>
+
+    </view>
+  </view>
+
+</view>  

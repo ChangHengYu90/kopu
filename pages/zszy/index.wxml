@@ -1,0 +1,13 @@
+<view class="zszy" wx:for="{{list}}" wx:key="*" wx:for-index="index" data-index="{{index}}" bindlongpress='longTa' id='{{item.id}}' catchtap='goxiugai'>
+  <view class="zszy-l">
+    <image src='{{item.imgurl}}'></image>
+  </view>
+  <view class="zszy-r">
+    <view class="zszy-r-t">
+      {{item.title}}
+    </view>
+    <view class="zszy-r-b">
+      {{item.content}}
+    </view>
+  </view>
+</view>

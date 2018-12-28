@@ -1,0 +1,8 @@
+<view class="fb">
+<view class="fb-t">KOPU产品在线是一个什么样的平台</view>
+<textarea placeholder='0-500字以内' maxlength='500'></textarea>
+</view>
+<view class='submitkb'></view>
+<view class='submit'>
+<view>发布</view>
+</view>

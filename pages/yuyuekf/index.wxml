@@ -1,0 +1,30 @@
+<view class="zxsq">
+  <view class='zxsq-con'>
+    <input placeholder='您的姓名' bindinput='hqname' maxlength='30'></input>
+  </view>
+  <view class='zxsq-con'>
+    <input placeholder='联系电话' bindinput='hqphone' maxlength='11' type='number'></input>
+  </view>
+  <view class='zxsq-con'>
+    <view class='zxsq-con2-l'>
+      <input placeholder='验证码' bindinput='hqyzm' type='number' ></input>
+    </view>
+    <view class='zxsq-con2-r'>
+      <view catchtap='huoquyzm' id="{{zcbtn}}">{{VerifyCode}}</view>
+    </view>
+
+  </view>
+  <view class='zxsq-con2'>
+   <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+    <view class="tui-picker-detail" wx:if="{{jieguo=='选择了'}}">
+     {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+    </view>
+    <view class="tui-picker-detail" wx:if="{{jieguo=='请选择预约时间'}}">
+     请选择预约时间
+    </view>
+  </picker>
+  </view>
+ 
+  <view class='tijiao' catchtap='submit'>立即预约</view>
+</view>
+<view class='guize'>我已阅读并同意<text>《kopu用户协议》</text></view>

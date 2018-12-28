@@ -1,0 +1,25 @@
+<view class='kopuwdout'>
+  <view class='wt'>
+    <view class='wttotle'>KOPU产业在线是一个什么样的平台</view>
+    <view class='hdnum'>
+      <view class='hdnum-l'>4个回答</view>
+      <view class='hdnum-r'>积分悬赏：10</view>
+    </view>
+  </view>
+  <view class='hd'>
+    <view class='hd-t'>
+      <view class='hd-t-l'>
+        <image src='http://ozr4vswg2.bkt.clouddn.com/745.png'></image>
+      </view>
+      <view class='hd-t-r'>
+        <view class='hd-t-r-t'>测试用户</view>
+        <view class='hd-t-r-b'>苏州 2017-5-6</view>
+      </view>
+    </view>
+    <view class='hd-b'>
+      <view class='hd-b-title'>这是用户回复内容</view>
+      <view class='hd-b-con'>可是大家发挥上课就发货速度快就发货快速进化方式开发上看到警方很快就说可是繁花盛开的</view>
+      
+    </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="jlcon" wx:for="{{list}}" wx:key="*" >
+  <view class="jlcon-l">
+    <view class="jlcon-l-t">项目名称：{{item.beizhu}}</view>
+    <view class="jlcon-l-b">联系人：{{item.User}}</view>
+  </view>
+  <view class="jlcon-r">
+    <view class="jlcon-r-t">
+      下载时间
+    </view>
+    <view class="jlcon-r-t">
+      {{item.time}}
+    </view>
+  </view>
+</view>
+<view class='zwshuju' wx:if="{{list.length==0}}">暂无数据</view>

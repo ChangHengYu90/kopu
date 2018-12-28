@@ -1,0 +1,265 @@
+<view class="user">
+  <view wx:for="{{sjlist}}" wx:key='*' wx:for-index="index">
+    <view class='userxq' catchtap='gouserdt' id="{{item.UserId}}">
+      <image src='{{href}}/{{item.HeadImage}}'></image>
+      {{item.UserName}}
+    </view>
+    <block wx:if="{{item.Img.length==1&&item.Detail.length>38}}">
+     <view class='newys'  catchtap='godongtaixq' id="{{index}}" data-xmid="{{item.Id}}">
+     <view class='newys-l'>{{item.Detail}}</view>
+     <view class='newys-r'>
+     <image src='{{item.Img[0]}}' catchtap='looktp' data-imglist='{{item.Img}}'  data-img='{{item.Img[0]}}'></image>
+     </view>
+     </view>
+    </block>
+    <block wx:else>
+    <view class='userjs' catchtap='godongtaixq' id="{{index}}" data-xmid="{{item.Id}}">{{item.Detail}}
+    </view>
+    <view class="{{item.Img.length>1?'userpic':'userpic2'}}" catchtap='godongtaixq' id="{{index}}" data-xmid="{{item.Id}}">
+      <image src='{{child}}' wx:for="{{item.Img}}" wx:key="*" wx:for-item='child'  catchtap='looktp' data-imglist='{{item.Img}}'  data-img='{{child}}'></image>
+    </view>
+    </block>
+    <view class='userxxxx'>
+      <view class='userxxxx-l'>{{item.cityName}} {{item.Time}}</view>
+      <view class='userxxxx-r'>
+        <view class='userxxxx-r-view' catchtap='dianzan' id='{{item.Id}}' data-index='{{index}}'>
+          <image src='{{imgurl}}/newpic/5.png'></image>
+          {{item.like}}
+        </view>
+        <view class='userxxxx-r-view' catchtap='godongtaixq' id="{{index}}" data-xmid="{{item.Id}}">
+          <image src='{{imgurl}}/newpic/11.png'></image>
+          {{item.ReplyCount}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<view class='tabkb'></view>
+<view class='tab'>
+  <view class='tab-l'>
+    <view class='tab-con' catchtap='gosy'>
+      <view class='tab-con-t'>
+        <image src='/image/xm.png'></image>
+      </view>
+      <view class='tab-con-b'>
+        项目
+      </view>
+    </view>
+    <view class='tab-con' catchtap='gozsq'>
+      <view class='tab-con-t'>
+        <image src='/image/zsq.png'></image>
+      </view>
+      <view class='tab-con-b'>
+        招商圈
+      </view>
+    </view>
+  </view>
+  <view class='tab-z'>
+    <view class='tab-z-con' catchtap='tabshow'>
+      <view class='tab-z-con-c'>
+        <image src='{{imgurl}}/newpic/6.png'></image>
+      </view>
+    </view>
+    <view class='zhongjianwz'>发布信息</view>
+  </view>
+  <view class='tab-l'>
+    <view class='tab-con'>
+      <view class='tab-con-t'>
+        <image src='/image/KOPU1.png'></image>
+      </view>
+      <view class='tab-con-b'>
+        KOPU
+      </view>
+    </view>
+    <view class='tab-con' catchtap='gomy'>
+      <view class='tab-con-t'>
+        <image src='/image/my11.png'></image>
+      </view>
+      <view class='tab-con-b'>
+        我的
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <view class="fabuzz" wx:if="{{tanisshow==2}}" catchtouchmove="true">
+  <view class="fabuzz-t">选择发布信息的类型</view>
+
+  <view class='fabutype'>
+    <view class='fabutype-con' catchtap='gofabu' data-dizhi="../xiangmfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu1.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布项目
+      </view>
+    </view>
+    <view class='fabutype-con' catchtap='gofabu' data-dizhi="../qyxzfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu2.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布载体
+      </view>
+    </view>
+    <view class='fabutype-con' catchtap='gofabu' data-dizhi="../zfxiangmfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu3.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布区域
+      </view>
+    </view>
+    <view class='fabutype-con' catchtap='gofabu' data-dizhi="../zstkfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu4.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        招商推客
+      </view>
+    </view>
+    <view class='fabutype-con' catchtap='gofabu' data-dizhi="../hzjgfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu5.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        合作机构
+      </view>
+    </view>
+    <view class='fabutype-con' catchtap='gofabu' data-dizhi="../kopuhaofb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu6.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布KOPU
+      </view>
+    </view>
+    <view class='fabutype-con' catchtap='gofabu' data-dizhi="../newsfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu7.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布资讯
+      </view>
+    </view>
+    <view class='fabutype-con' catchtap='gofabu' data-dizhi="../zztjfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu8.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        招租推客
+      </view>
+    </view>
+  </view>
+  <view class='fabuclose'>
+    <image src='/image/close.png' catchtap='closetab'></image>
+  </view>
+</view> -->
+<view class="fabuzz" wx:if="{{tanisshow==2}}" catchtouchmove ="true">
+  <view class="fabuzz-t">选择发布信息的类型</view>
+
+  <view class='fabutype'>
+  <view class='fabutype-con' catchtap='gofabu' data-dizhi="../rule/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu4.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        招商推客
+      </view>
+    </view>
+    <view class='fabutype-con' catchtap='gofabu' data-dizhi="../kopuhaofb/index" >
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+           <image src='/image/fabu6.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        KOPU号
+      </view>
+    </view>
+    <view class='fabutype-con' catchtap='gofabu' data-dizhi="../hzjgfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu5.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        合作机构
+      </view>
+    </view>
+    <view class='fabutype-con'  catchtap='gofabu' data-dizhi="../xiangmfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu1.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布项目
+      </view>
+    </view>
+    <view class='fabutype-con'  catchtap='gofabu' data-dizhi="../qyxzfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu2.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布载体
+      </view>
+    </view>
+    <view class='fabutype-con'  catchtap='gofabu' data-dizhi="../zfxiangmfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu3.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        区域合作
+      </view>
+    </view>
+    
+    
+    
+    <!-- <view class='fabutype-con' catchtap='gofabu' data-dizhi="../newsfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu7.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布资讯
+      </view>
+    </view> -->
+    <!-- <view class='fabutype-con' catchtap='gofabu' data-dizhi="../zztjfb/index">
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='/image/fabu8.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        招租推客
+      </view>
+    </view> -->
+  </view>
+  <view class='fabuclose'>
+    <image src='/image/close.png' catchtap='closetab'></image>
+  </view>
+</view>

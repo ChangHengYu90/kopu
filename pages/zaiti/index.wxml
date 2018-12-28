@@ -1,0 +1,11 @@
+<view class='hot-con' wx:for="{{zaiti}}" wx:key="*" wx:for-index="index"catchtap='golookxq' id='{{item.id}}' data-content='{{item.describe}}' data-index="{{index}}">
+  <view class='hot-con-l'>
+    <image src='{{item.imgUrl[0]}}'></image>
+  </view>
+  <view class='hot-con-r'>
+    <view class='hot-con-r-t'>{{item.houseName}}</view>
+    <view class='hot-con-r-z'>联系人：{{item.linkperople}}</view>
+    <view class='hot-con-r-z'>建筑面积：{{item.area}} 单价：{{item.DayMoney}}总价：{{item.MotherMoney}}</view>
+     <view class='hot-con-r-b'>{{item.address}}</view>
+  </view>
+</view>

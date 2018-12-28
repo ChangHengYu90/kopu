@@ -1,0 +1,84 @@
+<view class='dw'>
+
+  <view class='banner'>
+    <view class='sy-ss'>
+      <view class='sy-ss-l'>
+
+      </view>
+      <view class='sy-ss-z'>
+        <view class='sy-ss-z-con'>
+          <view class='sy-ss-z-con-l'>
+            <image src='/image/16.png'></image>
+          </view>
+          <view class='sy-ss-z-con-r'>
+            <input placeholder='搜索项目 领域 投资' confirm-type="search" bindconfirm="gosearch"></input>
+          </view>
+        </view>
+      </view>
+      <view class='sy-ss-r'>
+
+      </view>
+    </view>
+    <!-- <swiper class="bannerpic" indicator-dots indicator-color='rgba(255,255,255,.6)' indicator-active-color='#fff' autoplay>
+    <swiper-item wx:for="{{banner}}" wx:key='*'>
+      <image src="{{item.img}}" />
+    </swiper-item>
+  
+  </swiper> -->
+    <image src="{{imgurl}}/xcximage/sy01.png" wx:if='{{sjlist.length==0}}' />
+    <image src="{{sjlist[0].imgurl[0]}}" wx:if='{{sjlist.length>0}}' />
+  </view>
+  <view class='quyu' catchtap='dianji'>{{quyu}}</view>
+</view>
+<view class='dwkb'></view>
+<!-- <view class='content' wx:for="{{sjlist}}" wx:for-index="index" wx:key="*" catchtap='golookxq' id='{{item.id}}' data-image='{{item.imgurl}}' data-content="{{item.content}}" data-index="{{index}}">
+  <view class='content-l'>
+    <image src='{{item.imgurl[0]}}'></image>
+  </view>
+  <view class='content-r'>
+    <view class='content-r-t'>{{item.title}}</view>
+    <view class='content-r-b'>{{item.laiyuan}}</view>
+  
+  </view>
+</view> -->  
+<view class="user">
+  <view wx:for="{{sjlist}}" wx:for-index="index" wx:key="*" catchtap='golookxq' id='{{item.id}}' data-image='{{item.imgurl}}' data-content="{{item.content}}" data-index="{{index}}" style="border-bottom:1rpx solid #ddd">
+    <block wx:if="{{item.imgurl.length==1&&item.laiyuan.length>38}}">
+      <view class='newys'>
+        <view class='newys-l'>{{item.laiyuan}}</view>
+        <view class='newys-r'>
+          <image src='{{item.imgurl[0]}}'></image>
+        </view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class='userjs'>{{item.laiyuan}}
+      </view>
+      <view class="{{item.imgurl.length>1?'userpic':'userpic2'}}">
+        <image src='{{pic}}' wx:for="{{item.imgurl}}" wx:key="*" wx:for-item="pic"></image>
+      </view>
+    </block>
+  </view>
+</view>
+<view class='zwshuju' wx:if="{{sjlist.length==0}}">暂无数据</view>
+<!-- quyu -->
+<view class="cascade_box" animation="{{animationData}}">
+  <view class="cascade_hei"></view>
+  <view class="cascade_find">
+    <view class="cascade_header">
+      <text class='quxiao' catchtap="quxiao">取消</text>
+      <text class="queren" catchtap="queren">确认</text>
+    </view>
+    <picker-view indicator-style="height: 80rpx;" style="width: 100%; height: 400rpx;" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{sheng}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{shi}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column>
+      <!-- <picker-view-column>
+        <view wx:for="{{qu}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column> -->
+    </picker-view>
+  </view>
+</view>

@@ -1,0 +1,94 @@
+.toptab{
+  width: 100%;
+  height: 50rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  background-color: #b7c0c9;
+  position: fixed;
+  top: 0;
+}
+.toptabkb{
+   width: 100%;
+  height: 50rpx;
+}
+.toptab-con{
+  width: 25%;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab-content{
+  width: 100%;
+  height: 35rpx;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22rpx;
+  color: #fff;
+}
+.tab-content2{
+border-right: 1rpx solid #fff;
+}
+.tab-content3{
+background-color: #99c3fd
+}
+.listcon{
+  width: 100%;
+  height: 274rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #ddd;
+}
+.listcon-l{
+  width: 197rpx;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.listcon-l image{
+  width: 158rpx;
+  height: 179rpx;
+  border-radius: 20rpx;
+}
+.listcon-r{
+  width: 532rpx;
+  height: 100%;
+  padding: 50rpx 0;
+  box-sizing: border-box;
+}
+.listcon-r-t{
+  width: 100%;
+  padding: 20rpx 26rpx 5rpx 0;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: rgb(136, 136, 136);
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+ 
+}
+.listcon-r-b{
+  width: 100%;
+  padding: 0rpx 26rpx 0rpx 0;
+  box-sizing: border-box;
+  white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+font-size: 24rpx;
+color: rgb(172, 172, 172);
+line-height: 1.9;
+}
+.zwshuju{
+  width: 100%;
+  height: 750rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #999;
+}

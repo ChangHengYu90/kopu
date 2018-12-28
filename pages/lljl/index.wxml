@@ -1,0 +1,16 @@
+<view class='top-type'>
+<view class="{{typeid==1?'top-typel':'top-type2'}}" catchtap='choosebt' id='1'>我看过的</view>
+<view class="{{typeid==2?'top-typel':'top-type2'}}" catchtap='choosebt' id='2'>看过我的</view>
+</view>
+<view class='kb'></view>
+<view class='content'>
+<view class='content-l'>
+<image src="{{imgurl}}/xcximage/banner.png" />
+</view>
+<view class='content-r'>
+<view class='content-r-t'>房源标题</view>
+<view class='content-r-b'>单价 ：</view>
+<view class='content-r-b'>地址 ：</view>
+<view class='content-r-b'>查看时间 ：</view>
+</view>
+</view>

@@ -1,0 +1,39 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="top">
+  <view class="top-l">
+    <image src='{{xmxq.pimage}}'></image>
+  </view>
+  <view class="top-r">
+    <view class="top-r-t">{{xmxq.ptitle}}</view>
+    <view class="top-r-b" wx:if="{{xmxq.gongsi!=null}}">{{xmxq.gongsi}}-{{xmxq.renc}}-{{xmxq.pmiaoshu}}</view>
+    <view class="top-r-b" wx:if="{{xmxq.gongsi==null}}">{{xmxq.renc}}-{{xmxq.pmiaoshu}}</view>
+    <view class="top-r-b">{{xmxq.ptitle}}</view>
+  </view>
+</view>
+<view class='jbzl'>基本信息</view>
+<view class='jbzlzl'>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  <!-- {{xmxq.pcontent}} -->
+</view>
+<view class='jbzl'>BT/商业计划书</view>
+<view class='jbzl2'>
+  <view catchtap='btxiazai'>BT下载</view>
+  <view catchtap='jkdj'>对接申请</view>
+</view>
+<view class='jbzl'>团队成员</view>
+<view class="tdcy" wx:for="{{xmxq.ChuangTeam}}" wx:key="*">
+  <view class="tdcy-l">
+    <view class="tdcy-l-con">{{item.xing}}</view>
+  </view>
+  <view class="tdcy-r">
+    <view class="tdcy-r-con">
+    <view class="tdcy-r-con-t">{{item.name}} | <text>{{item.zhiwei}}</text></view>
+    <view class="tdcy-r-con-b">{{item.jieshao}}</view>
+    </view>
+  </view>
+</view>
+<view class='bottomkb'></view>
+<view class='bottom'>
+<view>关注</view>
+<view>联系人</view>
+</view>

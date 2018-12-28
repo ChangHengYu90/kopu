@@ -1,0 +1,82 @@
+<!--pages/register/index.wxml-->
+<view class='top' style="background-image: url('{{imgurl}}/xcximage/banner.png')">
+  <image src='{{tempFilePaths}}' catchtap='choosetx'></image>
+  <view class='dw'>
+    <image src='{{imgurl}}/xcximage/syhy.png'></image>
+  </view>
+</view>
+<view class='kb'></view>
+<view class='user-out'>
+  <view class='username'>
+    <view class='username-l'>
+      <image src='{{imgurl}}/xcximage/syhy.png'></image>
+    </view>
+    <view class='username-r'>
+      <view class='username-r-l'>
+        昵称
+      </view>
+      <view class='username-r-r'>
+        <input placeholder='请输入昵称'></input>
+      </view>
+    </view>
+  </view>
+  <view class='username'>
+    <view class='username-l'>
+      <image src='{{imgurl}}/xcximage/syhy.png'></image>
+    </view>
+    <view class='username-r'>
+      <view class='username-r-l'>
+        联系电话
+      </view>
+      <view class='username-r-r'>
+        <input placeholder='填写正在使用的联系方式'></input>
+      </view>
+    </view>
+  </view>
+  <view class='username2'>
+    <view class='username-l'>
+      <image src='{{imgurl}}/xcximage/syhy.png'></image>
+    </view>
+    <view class='username-r'>
+      <view class='username-r-l'>
+        性别
+      </view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='username-r-r'>
+        <input placeholder='填写正在使用的联系方式' value='{{array[index]}}'></input>
+      </picker>
+    </view>
+  </view>
+</view>
+<view class='kb'></view>
+<view class='user-out'>
+  <view class='username'>
+    <view class='username-l'>
+      <image src='{{imgurl}}/xcximage/syhy.png'></image>
+    </view>
+    <view class='username-r'>
+      <view class='username-r-l'>
+        公司地址
+      </view>
+      <view class='username-r-r'>
+        <input placeholder='请填写公司所在地址'></input>
+      </view>
+    </view>
+  </view>
+  <view class='username'>
+    <view class='username-l'>
+      <image src='{{imgurl}}/xcximage/syhy.png'></image>
+    </view>
+    <view class='username-r'>
+      <view class='username-r-l'>
+        公司名称
+      </view>
+      <view class='username-r-r'>
+        <input placeholder='请填写公司名称'></input>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='submit-out'>
+<view class='submit'>完成</view>
+</view>
+<canvas canvas-id="photo_canvas" style="width:{{canvasWidth}}px;height:{{canvasHeight}}px;position: absolute;left:-300px;top:-300px;"></canvas>

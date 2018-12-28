@@ -1,0 +1,22 @@
+<!-- <view class='ss'>
+  <view class='ss-con'>
+    <view class='ss-con-l'>
+      <image src='{{imgurl}}/xcximage/search.png'></image>
+    </view>
+    <view class='ss-con-z'>
+      <input placeholder='搜索项目' placeholder-class='inputys'></input>
+    </view>
+    <view class='ss-con-l'></view>
+  </view>
+</view> -->
+<!-- <view class='sskb'></view> -->
+<view class='content' wx:for="{{sjlist}}" wx:key="*" wx:for-index="index" data-index="{{index}}" catchtap='golookxq'>
+  <view class='content-l'>
+    <image src='{{item.imgurl}}'></image>
+  </view>
+  <view class='content-r'>
+    <view class='content-r-t'>{{item.title}}</view>
+    <view class='content-r-z'>政策类型：无</view>
+    <view class='content-r-z'>发文时间：{{item.guanjianci}}</view>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<!-- <view class='title'>{{name}}</view> -->
+<view class='zsfwxq'>
+  <image src='{{img}}' class='titlepic'></image>
+  <view class='xqwz'>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  <view class='title'>招商案例</view>
+  <view class="zsfw" wx:for="{{list}}" wx:key="*">
+    <view class="zsfw-l">
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class="zsfw-r">
+      <view class="zsfw-r-t">
+        {{item.name}}
+      </view>
+      <view class="zsfw-r-b">
+        {{item.detail}}
+      </view>
+    </view>
+  </view>
+</view>
+<view class='zxsqkb'></view>
+<view class='zxsq' >
+<view catchtap='goguanzhu'>关注</view>
+<view catchtap='gozxsq'>在线申请</view>
+</view>

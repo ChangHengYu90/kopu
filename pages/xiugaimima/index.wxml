@@ -1,0 +1,61 @@
+<!-- <view class='wjmm'>
+  <view class='wjmm-con'>
+    <view class='wjmm-con-l'>旧密码</view>
+    <view class='wjmm-con-r'>
+      <input placeholder='请输入旧密码' password='true' bindinput='hqoldpwd'></input>
+    </view>
+  </view>
+  <view class='wjmm-con'>
+    <view class='wjmm-con-l'>新密码</view>
+    <view class='wjmm-con-r'>
+      <input placeholder='请输入旧密码' password='true' bindinput='hqnewpwd'></input>
+    </view>
+  </view>
+  <view class='wjmm-con'>
+    <view class='wjmm-con-l'>确认密码</view>
+    <view class='wjmm-con-r'>
+      <input placeholder='请输入旧密码' password='true' bindinput='hqqrpwd'></input>
+    </view>
+  </view>
+  <view class='submit'>
+    <view class='submit-con' catchtap='gotijiao'>提交</view>
+  </view>
+</view> -->
+<view class="wjmm">
+  <view class='user'>
+    <view class='user-l'>
+      <image src='{{imgurl}}/xcximage/6.png'></image>
+    </view>
+    <view class='user-r'>
+      <input placeholder='请输入手机号' value='{{phone}}' placeholder-style='color:#CBCBCB' bindinput='hqphone' disabled='true' maxlength='11'></input>
+    </view>
+  </view>
+  <view class='user'>
+    <view class='user-l2'>
+      <image src='{{imgurl}}/xcximage/7.png'></image>
+    </view>
+    <view class='user-r2'>
+      <input placeholder='请输入验证码' placeholder-style='color:#CBCBCB' bindinput='hqyzm'  ></input>
+     <view catchtap='huoquyzm' id="{{zcbtn}}">{{VerifyCode}}</view>
+    </view>
+  </view>
+  <view class='user'>
+    <view class='user-l'>
+      <image src='{{imgurl}}/xcximage/2.png'></image>
+    </view>
+    <view class='user-r'>
+      <input placeholder='请输入新密码'  password='true'  placeholder-style='color:#CBCBCB' bindinput='hqpwd'></input>
+    </view>
+  </view>
+  <view class='user'>
+    <view class='user-l'>
+      <image src='{{imgurl}}/xcximage/2.png'></image>
+    </view>
+    <view class='user-r'>
+     <input placeholder='请再次输入密码' password='true' placeholder-style='color:#CBCBCB' bindinput='hqqrpwd'></input>
+    </view>
+  </view>
+</view>
+<view class='dl'>
+<view class='submit' catchtap='submit'>确定</view>
+</view>

@@ -1,0 +1,9 @@
+<view class="ztlist" wx:for="{{sjlist}}" wx:key="*" catchtap='fanhui' wx:for-index="index" id='{{index}}'>
+<view class="ztlist-l">
+<image src='{{item.imgurl}}'></image>
+</view>
+<view class="ztlist-r">
+<view class='ztlist-r-t'>{{item.title}}</view>
+<view class='ztlist-r-b'>{{item.laiyuan}}</view>
+</view>
+</view>

@@ -1,0 +1,20 @@
+<view class="xmgl">
+  <view class='listcon-l'>
+    <image src='http://ozr4vswg2.bkt.clouddn.com/745.png'></image>
+  </view>
+  <view class='listcon-r'>
+    <view class='listcon-r-t'>项目名称项目名称项目名称项目名称</view>
+    <view class='listcon-r-z'>项目名称项目名称项目名称</view>
+    <view class='listcon-r-b'>项目名称项目名目名称</view>
+  </view>
+</view>
+<view class="xmgl">
+  <view class='listcon-l'>
+    <image src='http://ozr4vswg2.bkt.clouddn.com/745.png'></image>
+  </view>
+  <view class='listcon-r'>
+    <view class='listcon-r-t'>项目名称项目名称项目名称项目名称</view>
+    <view class='listcon-r-z'>项目名称项目名称项目名称</view>
+    <view class='listcon-r-b'>项目名称项目名目名称</view>
+  </view>
+</view>

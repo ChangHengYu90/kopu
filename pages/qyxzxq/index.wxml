@@ -1,0 +1,51 @@
+<view class='qyxzxq'>
+  <view class='top-pic'>
+    <image src="{{imgurl}}/xcximage/sy03.png" />
+  </view>
+  <view class='title'>标题标题标题标题标题标题标题标题</view>
+  <view class='dizhi'>地址空手接电话科技手段和</view>
+  <view class='dizhi2'>地址空手接电话科技手段和</view>
+  <view class='xxjs'>
+    <view class='xxjs-con'>
+      <view class='xxjs-con-l'>
+        单价：
+        <span>115m</span>
+      </view>
+      <view class='xxjs-con-l'>
+        总价：
+        <span>115m</span>
+      </view>
+    </view>
+    <view class='xxjs-con'>
+      <view class='xxjs-con-l'>
+        面积：
+        <span>115m</span>
+      </view>
+      <view class='xxjs-con-l'>
+        类型：
+        <span>115m</span>
+      </view>
+    </view>
+    <view class='xxjs-con'>
+      <view class='xxjs-con-l'>
+        联系人：
+        <span>115m</span>
+      </view>
+      <view class='xxjs-con-l'>
+        联系电话：
+        <span>115m</span>
+      </view>
+    </view>
+  </view>
+  <view class='jianjie'>简介</view>
+  <view class='jiagexq'>【楼盘名称】苏州中心广场</view>
+  <view class='jiagexq'>【面积信息】540 m²</view>
+  <view class='jiagexq'>【价格优势】4元/m²/天</view>
+  <view class='jiagexq'>【房子情况】4元/m²/天</view>
+  <view class='ditu'>
+  <view class='ditudz'>地址：苏州园区东方之门站</view>
+  <map id="map" longitude="113.324520" latitude="23.099994" scale="14"markers="{{markers}}"
+      covers="{{covers}}" ></map>
+  </view>
+</view>
+<view class='xigai' catchtap='goxiugai'>修改</view>

@@ -1,0 +1,226 @@
+<!-- <view class='zztjtype'>
+  <view class='title'>
+    <view class='title-name'>标题：{{content.other1}}</view>
+    <view class='leixing'>类型：<block wx:if="{{content.state==1}}">厂房</block>
+    <block wx:if="{{content.state==2}}">园区</block>
+    <block wx:if="{{content.state==3}}">土地</block>
+    <block wx:if="{{content.state==4}}">办公</block>
+    </view>
+    <view class='leixing2'>
+      <view class='leixing2-l'>联系人：{{content.people}}</view>
+      <view class='leixing2-l'>联系电话：{{content.phone}}</view>
+    </view>
+    <view class='leixing2'>
+      <view class='leixing2-l'>面积：{{content.area}}</view>
+      <view class='leixing2-l'>价格：{{content.money}}</view>
+    </view>
+  </view>
+  <!-- <view class='title'>
+    <view class='title-name'>推荐理由：</view>
+    <view class='tjly'>
+      <view class='tjly-l'>1·</view>
+      <view class='tjly-r'>上课的家伙发生的空间开时间的粉红色的尽快发货卡时间段和放假科室导航发就收到基返回可接受的凤凰军事</view>
+    </view>
+    <view class='tjly'>
+      <view class='tjly-l'>2·</view>
+      <view class='tjly-r'>上课的家伙发生的空间开时间的粉红色的尽快发货卡时间段和放假科室导航发就收到基返回可接受的凤凰军事</view>
+    </view>
+    <view class='tjly'>
+      <view class='tjly-l'>3·</view>
+      <view class='tjly-r'>上课的家伙发生的空间开时间的粉红色的尽快发货卡时间段和放假科室导航发就收到基返回可接受的凤凰军事</view>
+    </view>
+    <view class='tjly'>
+      <view class='tjly-l'>4·</view>
+      <view class='tjly-r'>上课的家伙发生的空间开时间的粉红色的尽快发货卡时间段和放假科室导航发就收到基返回可接受的凤凰军事</view>
+    </view>
+  </view> -->
+<!-- <view class='title'>
+  <view class='title-name'>详情描述：</view>
+  <view class='tjly'>
+      <view class='tjly-l'>1·</view>
+      <view class='tjly-r'>{{content.detail}}</view>
+    </view>
+  </view>
+  <view class='zt'>
+    <view class='title-name' style='padding-bottom:20rpx'>状态：</view>
+    <view class='ztpic' >
+      <view class='ztpic1'>
+        <view class='ztpic1-l yanse2'>审核中</view>
+        <view class='ztpic1-r'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+      <view class='ztpic1 yanse2' wx:if="{{content.state==1}}">
+        <view class='ztpic1-l'>审核不通过</view>
+        <view class='ztpic1-r'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+      <view class='ztpic1 yanse2' wx:if="{{content.state==2}}">
+        <view class='ztpic1-l'>审核通过</view>
+        <view class='ztpic1-r'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+      <block wx:if="{{content.state==3}}">
+      <view class='ztpic1 yanse2'>
+        <view class='ztpic1-l'>审核通过</view>
+        <view class='ztpic1-r'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+      <view class='ztpic1 yanse2'>
+        <view class='ztpic1-l'>对接成功</view>
+        <view class='ztpic1-r2'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+      </block>
+       <block wx:if="{{content.state==4}}">
+       <view class='ztpic1 yanse2' >
+        <view class='ztpic1-l'>审核通过</view>
+        <view class='ztpic1-r'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+      <view class='ztpic1 yanse2'>
+        <view class='ztpic1-l'>对接失败</view>
+        <view class='ztpic1-r2'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+        </block>
+    </view>
+  </view>
+
+</view> -->
+<view class='con'>
+  <view class='con-l'>
+    <image src='{{content.image}}'></image>
+  </view>
+  <view class='con-r'>
+    <view class='con-r-t'>{{content.ptitle}}</view>
+    <view class='con-r-b'>{{content.pcontent}}</view>
+    <view class='con-r-b'>推送时间：{{content.addtime}}</view>
+  </view>
+</view>
+<view class='shtype' wx:if="{{content.state<2}}" >
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r'>
+       <view class='shtype-t-rcon'>正在审核中</view>
+    </view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b1'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l'></view>
+    <view class='shtype-t-r'>审核通过</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b1'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l'></view>
+    <view class='shtype-t-r'>对接中</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b1'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l'></view>
+    <view class='shtype-t-r'>对接成功</view>
+  </view>
+
+</view>
+<view class='shtype' wx:if="{{content.state==2}}" >
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'>
+     正在审核中
+    </view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r'> <view class='shtype-t-rcon'>审核通过</view></view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b1'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l'></view>
+    <view class='shtype-t-r'>对接中</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b1'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l'></view>
+    <view class='shtype-t-r'>对接成功</view>
+  </view>
+
+</view> 
+<view class='shtype' wx:if="{{content.state==3}}" >
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'>
+     正在审核中
+    </view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'> 审核通过</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r'><view class='shtype-t-rcon'>对接中</view></view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b1'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l'></view>
+    <view class='shtype-t-r'>对接成功</view>
+  </view>
+
+</view>
+<view class='shtype' wx:if="{{content.state==4}}">
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'>
+     正在审核中
+    </view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'> 审核通过</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'>对接中</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r'><view class='shtype-t-rcon'>对接成功</view></view>
+  </view>
+
+</view>

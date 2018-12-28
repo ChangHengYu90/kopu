@@ -1,0 +1,98 @@
+@import "../../wxParse/wxParse.wxss";
+.zsfwxq{
+  width: 100%;
+  padding: 38rpx 39rpx;
+  box-sizing: border-box;
+}
+.titlepic{
+  width: 100%;
+  height: 286rpx;
+}
+.xqwz{
+  width: 100%;
+  padding-top: 33rpx;
+  padding-bottom: 59rpx;
+  font-size: 22rpx;
+  color: rgb(129, 128, 128);
+  line-height: 1.7;
+}
+.title{
+  width: 100%;
+  font-size: 28rpx;
+  color: rgb(137, 136, 136);
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.zsfw{
+  width: 100%;
+  height: 270rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+.zsfw-l{
+  width: 185rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.zsfw-l image{
+  width: 158rpx;
+  height: 179rpx;
+  border-radius: 20rpx;
+}
+.zsfw-r{
+  width: 485rpx;
+  height: 100%;
+
+}
+.zsfw-r-t{
+  padding-top: 65rpx;
+  font-size: 30rpx;
+  color: rgb(137, 136, 136);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.zsfw-r-b{
+  padding-top: 20rpx;
+  font-size: 22rpx;
+  color: rgb(172, 172, 172);
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+}
+.title{
+  width: 100%;
+  padding: 20rpx 25rpx;
+  font-size: 30rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+.zxsqkb{
+  width: 100%;
+  height: 80rpx;
+}
+.zxsq{
+  width: 100%;
+  height: 80rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.zxsq view{
+  width: 170rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+  background-color: #378ff9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,14 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='pic'>
+<image src='{{xq.imgurl}}'></image>
+</view>
+<view class='title'>{{xq.title}}</view>
+<view class='xtitle'>发布时间：{{xq.guanjianci}}</view>
+<view class='xtitle'>联系人：{{xq.linkpeople}}</view>
+<view class='xtitle'>联系电话：{{xq.linkphone}}</view>
+<view class='content'>
+
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+<view class='zxsqkb' wx:if="{{zxsqid==1}}"></view>
+<view class='zxsq' wx:if="{{zxsqid==1}}" catchtap='gozxsq'>在线申请</view>

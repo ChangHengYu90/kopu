@@ -1,0 +1,43 @@
+/* pages/zsfw/index.wxss */
+.zsfw{
+  width: 100%;
+  height: 270rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 39rpx;
+}
+.zsfw-l{
+  width: 185rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.zsfw-l image{
+  width: 158rpx;
+  height: 179rpx;
+  border-radius: 20rpx;
+}
+.zsfw-r{
+  width: 485rpx;
+  height: 100%;
+
+}
+.zsfw-r-t{
+  padding-top: 65rpx;
+  font-size: 30rpx;
+  color: rgb(137, 136, 136);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.zsfw-r-b{
+  padding-top: 32rpx;
+  font-size: 22rpx;
+  color: rgb(172, 172, 172);
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+}

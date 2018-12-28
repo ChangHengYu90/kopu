@@ -1,0 +1,23 @@
+<view class="zxsq">
+  <view class='zxsq-con'>
+    <input placeholder='单位名称'></input>
+  </view>
+  <view class='zxsq-con'>
+    <input placeholder='联系人'></input>
+  </view>
+  <view class='zxsq-con'>
+    <input placeholder='联系电话'></input>
+  </view>
+  <view class='zxsq-con2'>
+    <view class='zxsq-con2-l'>
+      <input placeholder='联系电话'></input>
+    </view>
+    <view class='zxsq-con2-r'>
+      <view>获取验证码</view>
+    </view>
+
+  </view>
+  <view class='xqms'>需求描述</view>
+  <textarea></textarea>
+  <view class='tijiao'>提交</view>
+</view>

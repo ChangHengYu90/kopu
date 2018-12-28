@@ -1,0 +1,64 @@
+<!-- <view class='qyxzgl' wx:for="{{list}}" wx:key="*">
+  <view class='qyxzgl-l'>
+    <view class='qyxzgl-l-con'>
+      <view class='qyxzgl-l-con-t'>{{item.lookCount}}</view>
+      <view class='qyxzgl-l-con-b'>浏览量</view>
+    </view>
+  </view>
+  <view class='qyxzgl-r'>
+    <view class='qyxzgl-r-t'>
+      {{item.houseName}}
+    </view>
+    <view class='qyxzgl-r-z'>
+      {{item.linkperople}}
+    </view>
+    <view class='qyxzgl-r-b'>
+      发布日期：{{item.creatTime}} 地址:{{item.address}}
+    </view>
+    <view class='qyxzgl-r-anniu'>
+      <view class='qyxzgl-r-anniu-con' style="background-image: url('{{imgurl}}/xcximage/lansbj.png')" catchtap='gozd' id="{{item.id}}">置顶</view>
+      <view class='qyxzgl-r-anniu-con' style="background-image: url('{{imgurl}}/xcximage/lansbj.png')" catchtap='gosx' id="{{item.id}}">刷新</view>
+      <view class='qyxzgl-r-anniu-con' style="background-image: url('{{imgurl}}/xcximage/lansbj.png')" catchtap='godel' id="{{item.id}}">删除</view>
+    </view>
+  </view>
+</view> -->
+<view class='newqyxzgl' wx:for="{{list}}" wx:key="*">
+  <view class='newqyxzgl-l'>
+    <view class='newqyxzgl-l-t'>
+      <view class='newqyxzgl-l-tcon'>{{item.lookCount}}</view>
+    </view>
+    <view class='newqyxzgl-l-b'>浏览量</view>
+  </view>
+  <view class='newqyxzgl-r'>
+    <view class='newqyxzgl-r-t'> {{item.houseName}}</view>
+    <view class='newqyxzgl-r-z'>{{item.linkperople}}</view>
+    <view class='newqyxzgl-r-b'>
+      <view class='newqyxzgl-r-b-con' catchtap='gozd' id="{{item.id}}">
+        <image src='/image/zhiding.png'></image>
+          置顶
+      </view>
+      <view class='newqyxzgl-r-b-con' catchtap='gosx' id="{{item.id}}">
+        <image src='/image/shuaxin.png'></image>
+          刷新
+      </view>
+      <view class='newqyxzgl-r-b-con' catchtap='godel' id="{{item.id}}">
+        <image src='/image/shanchu.png'></image>
+          删除
+      </view>
+    </view>
+  </view>
+</view>
+<view class='zz' wx:if="{{jifen==1}}">
+  <view class='zz-con'>
+    <view class='zz-con-t'>积分赚取</view>
+    <view class='zz-con-b'>
+      <view class="{{zzid==1?'zz-con-b1':'zz-con-b2'}}" id='1' catchtap='choosetype'>问答</view>
+      <view class="{{zzid==2?'zz-con-b1':'zz-con-b2'}}" id='2' catchtap='choosetype'>招商荐客</view>
+      <view class="{{zzid==3?'zz-con-b1':'zz-con-b2'}}" id='3' catchtap='choosetype'>招租推荐</view>
+      <view class="{{zzid==4?'zz-con-b1':'zz-con-b2'}}" id='4' catchtap='choosetype'>现金充值</view>
+    </view>
+  </view>
+</view>
+<view class='zwshuju' wx:if="{{list.length==0}}">暂无数据</view>
+<view class='lljlkb'></view>
+<view class='lljl' catchtap='golljl'>浏览记录</view>

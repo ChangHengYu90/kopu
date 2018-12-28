@@ -1,0 +1,92 @@
+<view class="qyxzxg">
+  <view class='xg-con'>
+    <view class='xg-con-sr'>
+      <view class='xg-con-sr-l2'>
+        房源名称
+      </view>
+      <view class='xg-con-sr-r2'>
+        <input></input>
+      </view>
+    </view>
+    <view class='xg-con-sr'>
+      <view class='xg-con-sr-l'>
+        <view>房源区域</view>
+      </view>
+      <picker   bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class='xg-con-sr-r'>
+        <view class='xg-con-sr-r-l'>口水战的金凤凰开始的减肥和</view>
+        <view class='xg-con-sr-r-r'>
+          <image src='{{imgurl}}/xcximage/yysj.png'></image>
+        </view>
+        </view>
+      </picker >
+    </view>
+    <view class='xg-con-sr'>
+      <view class='xg-con-sr-l'>
+        <view>房源类型</view>
+      </view>
+      <view class='xg-con-sr-r'>
+        <view class='xg-con-sr-r-l'>口水战的金凤凰开始的减肥和</view>
+        <view class='xg-con-sr-r-r'>
+          <image src='{{imgurl}}/xcximage/yysj.png'></image>
+        </view>
+      </view>
+    </view>
+    <view class='xg-con-sr'>
+      <view class='xg-con-sr-l'>
+        <view>房源状态</view>
+      </view>
+      <view class='xg-con-sr-r'>
+        <view class='xg-con-sr-r-l'>口水战的金凤凰开始的减肥和</view>
+        <view class='xg-con-sr-r-r'>
+          <image src='{{imgurl}}/xcximage/yysj.png'></image>
+        </view>
+      </view>
+    </view>
+    <view class='xg-con-sr'>
+      <view class='xg-con-sr-l2'>
+        联系人
+      </view>
+      <view class='xg-con-sr-r2'>
+        <input></input>
+      </view>
+    </view>
+    <view class='xg-con-sr'>
+      <view class='xg-con-sr-l2'>
+        联系电话
+      </view>
+      <view class='xg-con-sr-r2'>
+        <input></input>
+      </view>
+    </view>
+    <view class='xg-con-sr'>
+      <view class='xg-con-sr-l2'>
+        面积
+      </view>
+      <view class='xg-con-sr-r2'>
+        <input></input>
+      </view>
+    </view>
+    <view class='xg-con-sr'>
+      <view class='xg-con-sr-l2'>
+        价格
+      </view>
+      <view class='xg-con-sr-r2'>
+        <input></input>
+      </view>
+    </view>
+    <view class='xg-con-sr'>
+      <view class='xg-con-sr-l2'>
+        位置
+      </view>
+      <view class='xg-con-sr-r2'>
+        <input></input>
+      </view>
+    </view>
+  </view>
+  <view class='xqms'>详情描述</view>
+  <textarea maxlength='2000'></textarea>
+  <view class='xqms'>上传图片</view>
+  <image src="{{imgurl}}/xcximage/banner.png"  class='sctp'/>
+  <view class='submit' style=" background-image: url({{imgurl}}/xcximage/lansbj.png)">提交</view>
+</view>

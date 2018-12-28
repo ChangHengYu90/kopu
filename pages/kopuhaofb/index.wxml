@@ -1,0 +1,51 @@
+<view class='kopu'>
+  <view class='kopucon'>
+    <!-- <view class='kopucon-l'>
+      标题：
+    </view> -->
+    <view class='kopucon-r'>
+      <input placeholder='标题：请输入标题' placeholder-class='kopucon-rinput' bindinput='hqxmname'></input>
+    </view>
+  </view>
+  <view  class='kopucon2'>
+  <!-- <view class='kopucon2-l'>
+      摘要：
+    </view> -->
+    <view class='kopucon2-r'>
+      <textarea placeholder='摘要：请输入摘要(非必填)' placeholder-class='kopucon-rinput' bindinput='hqtitle'></textarea>
+    </view>
+  </view>
+  <view  class='kopucon2'>
+  <!-- <view class='kopucon2-l'>
+      详情：
+    </view> -->
+    <view class='kopucon2-r'>
+      <textarea placeholder='详情：请输入详情' placeholder-class='kopucon-rinput' bindinput='hqxq'></textarea>
+    </view>
+  </view>
+  <!-- <view class='scpic'>
+  <block>
+    <image src='{{item}}' wx:for="{{uploadpic}}" wx:key="*"></image>
+  </block>
+  <image src='{{imgurl}}/newpic/17.png' catchtap='choosescpic'></image>
+  </view> -->
+  <view class='shangcpic'>
+    <block wx:for="{{uploadpic}}" wx:key="*" wx:for-index="index">
+      <view class='shangcdtp'>
+        <image src='{{item}}'></image>
+        <view class='dwdel' catchtap='godelpic' id="{{index}}">
+          <image src='{{imgurl}}/xcximage/close.png'></image>
+        </view>
+      </view>
+    </block>
+    <view class='shangcdtp' catchtap='choosescpic' wx:if="{{uploadpic.length<9}}">
+      <image src='{{imgurl}}/newpic/17.png'></image>
+    </view>
+  </view>
+  <view class='dizhi'>
+  <image src='{{imgurl}}/newpic/51.png' ></image>
+  {{city}}
+  </view>
+</view>
+<view class='fbkb'></view>
+<view class='fb' catchtap='submit'>发布</view>

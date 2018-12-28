@@ -1,0 +1,26 @@
+<view class="toptab">
+  <view class="toptab-con {{tabid==1?'tab-content3':''}}" catchtap='choosetab' id='1'>
+    <view class='tab-content tab-content2'>人才项目</view>
+  </view>
+  <view class="toptab-con {{tabid==2?'tab-content3':''}}" catchtap='choosetab' id='2'>
+    <view class='tab-content tab-content2'>科技企业</view>
+  </view>
+  <view class="toptab-con {{tabid==3?'tab-content3':''}}" catchtap='choosetab' id='3'>
+    <view class='tab-content tab-content2'>园区载体</view>
+  </view>
+  <view class="toptab-con {{tabid==4?'tab-content3':''}}" catchtap='choosetab' id='4'>
+    <view class='tab-content'>生产制造</view>
+  </view>
+</view>
+<view class="toptabkb">
+</view>
+<view class='listcon' wx:for="{{xmlist}}" wx:key="*" id="{{item.id}}" data-img="{{item.img}}" data-name="{{item.other1}}" data-content="{{item.detail}}" catchtap='golookxq'>
+  <view class='listcon-l'>
+    <image src='{{item.img}}'></image>
+  </view>
+  <view class='listcon-r'>
+    <view class='listcon-r-t'>{{item.other1}}</view>
+    <view class='listcon-r-b'>{{item.detail}}</view>
+  </view>
+</view>
+<view class='zwshuju' wx:if="{{xmlist.length==0}}">暂无数据</view>

@@ -1,0 +1,65 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='banner'>
+  <swiper class="bannerpic" indicator-dots indicator-color='rgba(255,255,255,.6)' indicator-active-color='#fff' autoplay>
+    <swiper-item wx:for="{{zaiti.imgUrl}}" wx:key='*'>
+      <image src="{{item}}" />
+    </swiper-item>
+  
+  </swiper>
+</view>
+<view class='dizhi'>
+<!-- <view class='dizhi-t'>{{zaiti.houseName}}</view>
+<view class='dizhi-z'>{{zaiti.address}}</view>
+<view class='dizhi-z'>发布时间：{{zaiti.address}}</view> -->
+<view class='dizhi-t'>{{zaiti.houseName}}</view>
+<view class='dizhicon'>
+  <image src='/image/my4.png'></image>
+  地址<span class='dizhiconname'>{{zaiti.houseName}}</span>
+</view>
+<view class='dizhicon'>
+  <image src='/image/time.png'></image>
+  时间<span class='dizhiconname'>{{zaiti.Time}}</span>
+</view>
+<view class='dizhicon'>
+  <image src='/image/yanjing.png'></image>
+  浏览<span class='dizhiconname'>{{zaiti.lookCount}}</span>
+</view>
+</view>
+<view class='dizhi2'>
+  <view class='dizhi-l'>
+    <view class='dizhi-l-t'>单价<text>{{zaiti.DayMoney}}</text></view>
+    <view class='dizhi-l-t'>面积<text>{{zaiti.area}}</text></view>
+    <view class='dizhi-l-t'>联系人<text>{{zaiti.linkperople}}</text></view>
+    <!-- <view class='anniu' catchtap='bdphone'>拨打电话</view> -->
+</view>
+<view class='dizhi-r'>
+   <view class='dizhi-l-t'>总价<text>{{zaiti.MotherMoney}}</text></view>
+    <view class='dizhi-l-t'>类别<text></text></view>
+    <view class='dizhi-l-t'>联系电话<text>{{zaiti.linkMobile}}</text></view>
+    <!-- <view class='anniu' catchtap='yylook' id= "{{zaiti.id}}">预约看房</view> -->
+</view>
+</view>
+<view class='content'>
+
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+<view class='dizhidt'>
+<view class='dizhiname'>地址：{{zaiti.address}}</view>
+<map id="map" longitude="{{location.lng}}" latitude="{{location.lat}}" scale="14" markers="{{markers}}"
+     ></map>
+</view>
+ 
+<!-- <view class='daohang'><view catchtap='goditu'>导航</view></view> -->
+<view class='dwkb'></view>
+<cover-view class='dw'>
+<cover-view class='dw-l'>
+
+<cover-view catchtap='goditu'><cover-image src='/image/daohang.png'></cover-image></cover-view>
+<cover-view >导航</cover-view>
+
+</cover-view>
+<cover-view class='dw-z'  catchtap='bdphone'>
+<cover-view>拨打电话</cover-view>
+</cover-view>
+<cover-view class='dw-z' catchtap='yylook' id= "{{zaiti.id}}"><cover-view>预约看房</cover-view></cover-view>
+</cover-view>

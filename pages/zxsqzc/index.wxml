@@ -1,0 +1,27 @@
+
+<view class="zxsq">
+  <view class='zxsq-con'>
+    <input placeholder='单位名称'bindinput='hqdwname' maxlength='30'></input>
+  </view>
+  <view class='zxsq-con'>
+    <input placeholder='联系人'bindinput='hqname' maxlength='30'></input>
+  </view>
+  <view class='zxsq-con'>
+    <input placeholder='联系电话' bindinput='hqphone' maxlength='11' type='number'></input>
+  </view>
+  <view class='zxsq-con2'>
+    <view class='zxsq-con2-l'>
+      <input placeholder='验证码' bindinput='hqyzm' type='number'></input>
+    </view>
+    <view class='zxsq-con2-r'>
+      <view catchtap='huoquyzm' id="{{zcbtn}}">{{VerifyCode}}</view>
+    </view>
+
+  </view>
+  <view class='xqms'>需求描述</view>
+  <textarea placeholder='请输入详情描述' value='{{xqms}}' bindinput='hqxqms' maxlength='9000'></textarea>
+  <view class='tijiao' catchtap='submit'>提交</view>
+</view>
+<view class='xieyi'>
+已阅读并同意<text>《kopu用户协议》</text>
+</view>
